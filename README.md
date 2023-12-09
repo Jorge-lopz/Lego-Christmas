@@ -1,4 +1,4 @@
 WEB NAVIDAD
 
-> [!NOTE]  
+> [!INFO]  
 >LEGO
