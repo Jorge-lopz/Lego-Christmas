@@ -1,1 +1,152 @@
+<!DOCTYPE html>
 
+<html>
+
+<!--Imports-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--Header-->
+
+<head>
+    <title>Lego</title>
+    <link rel="icon" href="assets/Lego Icon.png">
+</head>
+
+<header id="header" style="background-color:rgb(2, 2, 2);
+        padding-bottom: 15px;
+        display: inline-block;
+        padding-left: 12px;
+        padding-top: 15px;
+        position: fixed;
+        width:100%;
+        border-bottom: 2px solid rgb(255, 255, 255, 1);
+        left: 0;
+        top: 0;
+        z-index:9998">
+
+    <button id="HamburguerButton" onmouseover="this.style.backgroundColor='#17a4e0'"
+        onmouseout="this.style.backgroundColor='#40bcf0'"
+        onclick="document.getElementById('HamburguerMenu').style.display = 'block';this.style.display='none'; document.getElementById('HamburguerButton2').style.display = 'inline-block';"
+        style="font-family: Calibri;
+                border: 0px;
+                margin-left:4px;
+                font-size: 30px;
+                display: inline-block;
+                background-color: #40bcf0;
+                border-radius: 4px;
+                text-decoration:none;
+                color:black;">
+        <img src="assets/Hamburger Icon.png" alt="Haburguer Menu Icon" height="40px"
+            style="filter:drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.2));margin-top:7px;"><sup> <b>MENU </b>
+    </button>
+    <button id="HamburguerButton2"
+        onclick="document.getElementById('HamburguerMenu').style.display = 'none';this.style.display='none'; document.getElementById('HamburguerButton').style.display = 'inline-block';"
+        style="font-family: Calibri;
+                border: 0px;
+                margin-left:4px;
+                display:none;
+                font-size: 30px;
+                display: none;
+                background-color: #17a4e0;
+                border-radius: 4px;
+                text-decoration:none;
+                color:black;">
+        <img src="assets/Hamburger Icon.png" alt="Haburguer Menu Icon" height="40px"
+            style="filter:drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25)); margin-top:7px;"><sup> <b>MENU </b>
+    </button>
+
+    <a style="
+        color: rgb(255, 255, 255);
+        font-family: Lilita One;
+        text-decoration: none;
+        font-size: 28px;
+        margin: 10px;"><img src="assets/Lego Logo.png" alt="Zoo Logo" width="40px" height="40px"
+            style="margin-left:10px; margin-top: 5px"><sup>
+            ANIMALIA </a>
+
+    <a id="unlock" href="javascript:;" style="
+        margin-left:735px; display: inline-block"
+        onclick="this.style.display='none'; getElementById('lock').style.display='inline-block';
+                    getElementById('HamburguerMenu').style.display='none';getElementById('header').style.position='absolute'">
+        <img src=" assets/unlock.png" height="28px"></a>
+
+    <a id="lock" href="javascript:;" style="
+        margin-left:735px; display: none" onclick="this.style.display='none'; getElementById('unlock').style.display='inline-block';
+                    getElementById('header').style.position='fixed'">
+        <img src=" assets/lock.png" height="28px"></a>
+
+    <a style="
+        color: rgb(255, 255, 255);
+        font-family: Lilita One;
+        text-decoration: none;
+        font-size: 28px;
+        margin-left:25px;" href="#"><img src="assets/busqueda.png" height="30px"> </a>
+
+    <sup><sup><button id="EntradasButton" onmouseover="this.style.backgroundColor='#17a4e0'"
+                onmouseout="this.style.backgroundColor='#40bcf0'" style="font-family: Calibri;
+            border: 0px;
+            margin-left:0px;
+            font-size: 22px;
+            margin-left:25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-family: Lexend;
+            display: inline-block;
+            background-color: #40bcf0;
+            border-radius: 4px;
+            text-decoration:none;
+            color:rgb(0, 0, 0);">
+                <a style="text-decoration:none; color:rgb(0, 0, 0);" href="horarios_tarifas.html#precio"> Comprar
+                    Entradas </a></button>
+
+            <!-- Menu de Navegación -->
+            <div id="HamburguerMenu" style="display: none;
+                position: absolute;
+                top: 87px;
+                left: 10px;
+                text-align:center;
+                font-family: Lexend;
+                font-size: 22px;
+                line-height: 35px;
+                color:rgb(255, 255, 255);
+                background: linear-gradient(rgb(2, 2, 2), rgb(2, 2, 2), rgb(2, 2, 2, 0.8));
+                border-bottom-left-radius:3%;
+                border-bottom-right-radius:3%;
+                border-bottom: 2px solid rgb(255, 255, 255, 1);
+                border-left: 2px solid rgb(255, 255, 255, 1);
+                border-right: 2px solid rgb(255, 255, 255, 1);
+                padding: 10px 25px;
+                min-width: 105px;
+                z-index: 9999;">
+                <a href="#Animales" onmouseover="this.style.fontWeight='bold'"
+                    onmouseout="this.style.fontWeight='normal'"
+                    onclick="getElementById('HamburguerMenu').style.display='none'" style="text-decoration:none;
+color:rgb(255, 255, 255);
+font-weight:400px;">Animales</a>
+                <br>
+                <a href="horarios_tarifas.html" onmouseover="this.style.fontWeight='bold'"
+                    onmouseout="this.style.fontWeight='normal'" style="text-decoration:none;
+color:rgb(255, 255, 255);
+font-weight:400px;">Horario</a>
+                <br>
+                <a href="horarios_tarifas.html#precio" onmouseover="this.style.fontWeight='bold'"
+                    onmouseout="this.style.fontWeight='normal'" style="text-decoration:none;
+color:rgb(255, 255, 255);
+font-weight:400px;">Precio</a>
+                <br>
+                <a href="contacto.html" onmouseover="this.style.fontWeight='bold'"
+                    onmouseout="this.style.fontWeight='normal'" style="text-decoration:none;
+color:rgb(255, 255, 255);
+font-weight:400px;">Contacto</a>
+                <br>
+            </div>
+
+</header>
+
+<body></body>
+
+</html>
