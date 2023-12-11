@@ -1,3 +1,4 @@
 WEB NAVIDAD
 
-    LEGO
+> [!NOTE]  
+>LEGO
