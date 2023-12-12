@@ -1,3 +1,7 @@
+<!-- NOTAS:
+· Usar las etiquetas <dialog> y <details>
+-->
+
 <!DOCTYPE html>
 
 <html>
@@ -18,23 +22,15 @@
 </head>
 
 <header id="header" style="background-color:#ffcf00;
-        padding-bottom: 10px;
+        box-shadow: #000000 -5px -5px 15px;
         display: inline-block;
-        padding-left: 0px;
-        padding-top: 10px;
         position: fixed;
+        padding:1%;
+        padding-bottom: 2px;
         width:100%;
         left: 0;
         top: 0;
         z-index:9998">
-
-    <a style="
-        color: rgb(255, 255, 255);
-        font-family: Lilita One;
-        text-decoration: none;
-        font-size: 28px;
-        margin: 10px;"><img src="assets/Lego Logo.png" alt="Zoo Logo" width="60px" height="60px"
-            style="margin-left:10px; margin-top: 5px"></a>
 
     <a id="unlock" href="javascript:;" style="
         margin-left:735px; display: none"
@@ -47,115 +43,47 @@
                     getElementById('header').style.position='fixed'">
         <img src=" assets/lock.png" height="28px"></a>
 
-    <a style="
-        color: rgb(255, 255, 255);
-        font-family: Lilita One;
-        text-decoration: none;
-        font-size: 28px;
-        margin-left:25px;" href="#"><img src="assets/busqueda.png" height="30px"> </a>
+    <a href="#" style="float: left">
+        <img src="assets/Lego Logo.png" alt="Zoo Logo" width="60px" height="60px">
+    </a>
 
-    <sup><sup><button id="EntradasButton" 
-                onmouseover="this.style.backgroundColor='#17a4e0'"
-                onmouseout="this.style.backgroundColor='#40bcf0'" 
-                style="font-family: Calibri;
-            border: 0px;
-            margin-left:0px;
-            font-size: 22px;
-            margin-left:25px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            font-family: Lexend;
-            display: inline-block;
-            background-color: #40bcf0;
-            border-radius: 4px;
-            text-decoration:none;
-            color:rgb(0, 0, 0);">
-                <a style="text-decoration:none; color:rgb(0, 0, 0);" href="horarios_tarifas.html#precio"> Comprar
-                </a></button>
+    <table cellspacing="0" cellpadding="0" style="margin-left:71%; float: left;
+        background-color:#ffffff; 
+        padding: 5px;
+        margin-top: 7px; 
+        border-radius: 7px;
+        box-shadow: #00000030 3px 3px 5px;">
+        <tr>
+            <td>
+                <img src="
+                https://st2.depositphotos.com/4060975/8056/v/450/depositphotos_80565476-stock-illustration-magnifier-vector-icon.jpg"
+                    alt="Búsqueda" width="35px">
+            </td>
+            <td>
+                <input type="text" placeholder="Búsqueda"
+                    style="border:none; outline:none; margin-left:2%; font-size:18px; font-family: Lexend;">
+            </td>
 
+        </tr>
+    </table>
 
-            <ul style="
-            display: flex; 
-            list-style: none; 
-            margin-left: 75%;
-            margin-top: -4%;
-            cursor: pointer;">
-        
-                <li style="
-                background-color: white;
-                 height: 2%;
-                 width: 200px; 
-                 border-radius: 10px;
-                 padding: 1%;
-                 text-align: left;
-                 cursor: pointer;
-                 font-size: 14px;
-                 font-family:Lexend;"
-                >
-                    <img src="https://st2.depositphotos.com/4060975/8056/v/450/depositphotos_80565476-stock-illustration-magnifier-vector-icon.jpg" alt="lupa"
-                    style="border-radius: 50%; float: left;" width="40px">
-
-                    <span contenteditable="true" style="float: left; padding-top: 6%; border: none; outline: none;" > Búsqueda</span>
-
-                </li>
-
-                <li>
-                  <img src="assets/bag-icon-shopping-bag-icon-bag-logo-bag-illustration-free-vector-removebg-preview.png" alt="compra" width="80px" style="margin-top: -24%; margin-left: 3%; cursor: pointer;">
-
-                </li>
-
-               
-
-
-            </ul>        
-
+    <img src="assets/bag-icon-shopping-bag-icon-bag-logo-bag-illustration-free-vector-removebg-preview.png"
+        alt="Carrito" width="80px" style="margin-top: -10px;">
 
 </header>
 
 <body style="overflow-x:hidden;">
 
     <!--Background-->
-    <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; " width=102% autoplay loop muted
-        src="assets/Lego Christmas Video.mp4">
+    <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: absolute" width=102%
+        autoplay loop muted src="assets/Lego Christmas Video.mp4">
     </video>
+
+    <img src="Sin título.png" style="position:fixed; margin-top: 85px; margin-left: -1%; z-index:9997;" width="101%">
 
 
     <br><br><br><br><br>
-    <h1 style="background: linear-gradient(to right, #3498db, #e74c3c);
-    color: transparent; 
-    -webkit-background-clip: text;
-    font-family: 'Arial', sans-serif;
-    background-size: 70%;"> 
-        Hola perra, mira que efecto tan guapo. <br><br> <span style="font-size: 25px;">tenía también un efecto de neón ultra chulo pero solo funciona en CSS :(</span></h1>
 
-    <!--Disclaimer, esto no sirve de absolútamente una mierda hasta que tengamos css-->
-  
-    <style>
-      .muestra{
-        background-color: gray;
-        margin: 200px;  
-        font-size: 40px;
-        color: whitesmoke; 
-        text-align: center;
-         margin: 0; 
-         text-shadow: 
-          0 0 10px rgba(229, 152, 102, 0.9),
-          0 0 20px rgba(229, 152, 102, 0.8),
-          0 0 30px rgba(229, 152, 102, 0.7), 
-           0 0 40px rgba(229, 152, 102, 0.6), 
-           0 0 50px rgba(229, 152, 102, 0.5);
-  
-         
-        color: lightgoldenrodyellow;
-      }
-  
-  
-    </style>
-    <h1 class="muestra"
-    "> 
-       Disclaimer, esto no se puede hacer con html pero lo pongo aquí igualmente porque está guapo.</h1>
     <br>
     <br>
     <br>
