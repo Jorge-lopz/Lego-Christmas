@@ -5,7 +5,7 @@
 
 
 
-  <table border="1" cellpadding="0" style="
+  <table border="0" cellpadding="0" style="
   background-color: #7c131b;
   height: 350px;
   width: 110%;
@@ -135,63 +135,65 @@
 
     <!-- Muñecajo de ejemplo -->
     <tr>
+
+      <!-- Gorro  -->
+
       <!-- Gorro Delante -->
-      <td style="
+      <td id="gorro1" style="
     padding-left: 60%;
-    margin-top: -20%;
+    margin-top: -23%;
     position: absolute;
     z-index: 2;
     ">
-        <img src="assets/gorritoSafariDelante.png" alt="gorrito" style="width: 100px;">
+        <img src="assets/gorritoSafariDelante.png" alt="gorrito" style="width: 170px;">
       </td>
       <!-- Gorro Detrás -->
-      <td style="
+      <td id="gorro2" style="
     padding-left: 60%;
-    margin-top: -20%;
+    margin-top: -23%;
     position: absolute;
     z-index: 0;
     ">
-        <img src="assets/gorritoSafariDetras.png" alt="gorrito" style="width: 100px;">
+        <img src="assets/gorritoSafariDetras.png" alt="gorrito" style="width: 170px;">
       </td>
-
       <!-- Cabeza -->
-      <td style="
+      <td id="cara" style="
     padding-left: 60%;
-    margin-top: -20%;
+    margin-top: -22.8%;
     position: absolute;
     z-index: 1;
     ">
-        <img src="assets/cabeza.png" alt="gorrito" style="width: 100px;">
+        <img src="assets/cabeza.png" alt="gorrito" style="width: 170px;">
       </td>
 
       <!-- cuerpoBasico -->
-      <td style="
+      <td id="cuerpo" style="
     padding-left: 60%;
-    margin-top: -17.3%;
+    margin-top: -18.5%;
     position: absolute;
     z-index: 1;
     ">
-        <img src="assets/cuerpoBasico.png" alt="gorrito" style="width: 100px;">
+        <img src="assets/camisetaRoja.png" alt="gorrito" style="width: 170px;">
       </td>
 
       <!-- Piernas -->
-      <td style="
+      <td id="piernas" style="
     padding-left: 60%;
-    margin-top: -14.2%;
+    margin-top: -14%;
     position: absolute;
     z-index: 0;
     ">
-        <img src="assets/piernasBasico.png" alt="gorrito" style="width: 100px;">
+        <img src="assets/piernas.png" alt="gorrito" style="width: 170px;">
       </td>
 
       <!-- Manos -->
-      <td style="
+      <td id="manos" style="
     padding-left: 60%;
-    margin-top: -17.3%;
+    margin-top: -18.5%;
     position: absolute;
     z-index: 4;
     ">
-        <img src="assets/manos.png" alt="Manos" style="width: 100px;">
+        <img src="assets/manos.png" alt="Manos" style="width: 170px;">
       </td>
 
     </tr>
@@ -199,9 +201,18 @@
   </table>
 
 
-  </table>
+  <button
+    onmousedown="document.getElementById('gorro1').innerHTML = '<img src=assets\gorritoSafari>', document.getElementById('gorro2').style.display = 'none'; ">Ocultar
+    Gorro</button>
 
+  <button onmousedown="document.getElementById('piernas').innerHTML = ('src= assets/piernas.png
+    style='width: 170px;'')">
+    cambiar gorro</button>
 
+  <button
+    onmousedown="document.getElementById('piernas').innerHTML = '<img src=\'assets/piernasBasico.png\' style=\'width: 170px;\'>';">
+    Cambiar Piernas
+  </button>
 
 
 
