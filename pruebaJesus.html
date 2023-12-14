@@ -6,11 +6,12 @@
 
 
   <table border="0" cellpadding="0" style="
-  background-color: #7c131b;
   height: 350px;
   width: 110%;
   margin-left: -8px;
   float: left ;
+  z-index: 999;
+  position: absolute;
   
   ">
     <tr>
@@ -85,12 +86,15 @@
       width: 80px;
       border: black;
       border: solid;">
-        <img src="assets/cuerpoBasico.png" alt="gorritoSafari" style="
+        <img src="assets/camisetaSanta.png" alt="gorritoSafari" style="
       padding: 0;
       margin: 0;
       width: 80px;
       border: black;
-      border: solid;">
+      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
+      '<img src=\'assets/camisetaSanta.png\' style=\'width: 170px;\'>';">>
+
+
         <img src="assets/cuerpoBasico.png" alt="gorritoSafari" style="
       padding: 0;
       margin: 0;
@@ -132,8 +136,10 @@
         border: solid;
         ">
     </tr>
+  </table>
+  <!-- Muñecajo de ejemplo -->
 
-    <!-- Muñecajo de ejemplo -->
+  <table style="padding-top: 25%">
     <tr>
 
       <!-- Gorro  -->
@@ -143,7 +149,7 @@
     padding-left: 60%;
     margin-top: -23%;
     position: absolute;
-    z-index: 2;
+    z-index: 888;
     ">
         <img src="assets/gorritoSafariDelante.png" alt="gorrito" style="width: 170px;">
       </td>
@@ -152,16 +158,17 @@
     padding-left: 60%;
     margin-top: -23%;
     position: absolute;
-    z-index: 0;
+    z-index: 900;
     ">
         <img src="assets/gorritoSafariDetras.png" alt="gorrito" style="width: 170px;">
       </td>
+
       <!-- Cabeza -->
       <td id="cara" style="
     padding-left: 60%;
     margin-top: -22.8%;
     position: absolute;
-    z-index: 1;
+    z-index: 887;
     ">
         <img src="assets/cabeza.png" alt="gorrito" style="width: 170px;">
       </td>
@@ -171,7 +178,7 @@
     padding-left: 60%;
     margin-top: -18.5%;
     position: absolute;
-    z-index: 1;
+    z-index: 888;
     ">
         <img src="assets/camisetaRoja.png" alt="gorrito" style="width: 170px;">
       </td>
@@ -181,7 +188,7 @@
     padding-left: 60%;
     margin-top: -14%;
     position: absolute;
-    z-index: 0;
+    z-index: 888;
     ">
         <img src="assets/piernas.png" alt="gorrito" style="width: 170px;">
       </td>
@@ -191,7 +198,7 @@
     padding-left: 60%;
     margin-top: -18.5%;
     position: absolute;
-    z-index: 4;
+    z-index: 888;
     ">
         <img src="assets/manos.png" alt="Manos" style="width: 170px;">
       </td>
@@ -201,21 +208,15 @@
   </table>
 
 
-  <button
-    onmousedown="document.getElementById('gorro1').innerHTML = '<img src=assets\gorritoSafari>', document.getElementById('gorro2').style.display = 'none'; ">Ocultar
-    Gorro</button>
-
-  <button onmousedown="document.getElementById('piernas').innerHTML = ('src= assets/piernas.png
-    style='width: 170px;'')">
-    cambiar gorro</button>
-
-  <button
-    onmousedown="document.getElementById('piernas').innerHTML = '<img src=\'assets/piernasBasico.png\' style=\'width: 170px;\'>';">
-    Cambiar Piernas
-  </button>
 
 
-
+  <img src="assets/camisetaSanta.png" alt="gorritoSafari" style="
+      padding: 0;
+      margin: 0;
+      width: 80px;
+      border: black;
+      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
+      '<img src=\'assets/camisetaSanta.png\' style=\'width: 170px;\'>';">>
 
 
 
