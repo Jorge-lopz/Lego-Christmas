@@ -1,264 +1,290 @@
 <!DOCTYPE html>
+
 <html>
+
+<!--Disable Drag on both tables-->
 
 <body>
 
+  <table>
+
+    <table border="0" cellpadding="0" style="
+    height: 350px;
+    width: 110%;
+    margin-left: -8px;
+    float: left ;
+    z-index: 999;
+    position: absolute;
+    margin-left: 7%;">
+
+      <br>
+
+      <tr>
+
+        <!-- Gorro -->
+        <td style="height: 10px;">
+
+          <img id="selectorGorro" src="assets/legoCreator/peloBasico.png" alt="Pelo Basico" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
+          '<img src=\'assets/legoCreator/peloBasico.png\' style=\'width: 170px;\'>'; 
+          document.getElementById('gorro2').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'
+          ">
+
+          <img id="selectorGorro" src="assets/legoCreator/barba.png" alt="" style="
+            padding: 0;
+            margin: 0;
+            width: 80px;
+            border-radius: 5px;
+            border: black;
+            border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
+            '<img src=\'assets/legoCreator/barba.png\' style=\'width: 170px;\'>'; 
+            document.getElementById('gorro2').innerHTML = 
+            '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'
+            ">
+
+          <img id="selectorGorro" src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; 
+          document.getElementById('gorro2').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'
+          ">
+
+          <img id="selectorGorro" src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; 
+          document.getElementById('gorro2').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'
+          ">
+        </td>
+      </tr>
+
+      <tr>
+        <!-- Cabeza -->
+        <td style="height: 10px;">
+          <img id='selectorCabeza' src="assets/legoCreator/caraBasica.png" alt="Cara Basica" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cabeza').innerHTML = 
+          '<img src=\'assets/legoCreator/caraBasica.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)' ">
+
+          <img id='selectorCabeza' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cabeza').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorCabeza' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cabeza').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorCabeza' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cabeza').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+        </td>
+      </tr>
+
+      <tr>
+        <!-- Camiseta  -->
+        <td style="height: 10px;">
+          <img id='selectorCamiseta' src="assets/legoCreator/camisetaRoja.png" alt="Camiseta Roja" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cuerpo').innerHTML = 
+          '<img src=\'assets/legoCreator/camisetaRoja.png\' style=\'width: 170px;\'>';this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorCamiseta' src="assets/legoCreator/camisetaSanta.png" alt="Camiseta Santa" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cuerpo').innerHTML = 
+          '<img src=\'assets/legoCreator/camisetaSanta.png\' style=\'width: 170px;\'>';this.style.backgroundColor='rgb(0,0,0,0.1)'">
 
 
-  <table border="0" cellpadding="0" style="
-  height: 350px;
-  width: 110%;
-  margin-left: -8px;
-  float: left ;
-  z-index: 999;
-  position: absolute;
-  margin-left: 7%;
-  
-  ">
-    <tr>
-      <td>Selector de cosos </td>
-    </tr>
+          <img id='selectorCamiseta' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cuerpo').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>';this.style.backgroundColor='rgb(0,0,0,0.1)'">
 
-    <tr>
-      <!-- Gorro -->
-      <td style="height: 10px;">
+          <img id='selectorCamiseta' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('cuerpo').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>';this.style.backgroundColor='rgb(0,0,0,0.1)'">
 
-        <img src="assets/peloBasicoDelante.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('gorro1').innerHTML = 
-      '<img src=\'assets/peloBasicoDelante.png\' style=\'width: 170px;\'>'; 
-      document.getElementById('gorro2').innerHTML = 
-      '<img src=\'assets/\' style=\'width: 170px;\'>'; 
-      ">
+        </td>
 
-        <img src="assets/blank.png" alt="gorritoSafari" style="
-        padding: 0;
-        margin: 0;
-        width: 80px;
-        border: black;
-        border: solid;" onmousedown="document.getElementById('gorro1').innerHTML = 
-        '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
-        document.getElementById('gorro2').innerHTML = 
-        '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
+      </tr>
+      <tr>
+        <!-- Pantalones -->
+        <td style="height: 10px;">
+          <img id='selectorPantalones' src="assets/legoCreator/pantalonesNegros.png" alt="Pantalones Negros" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('piernas').innerHTML = 
+          '<img src=\'assets/legoCreator/pantalonesNegros.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorPantalones' src="assets/legoCreator/pantalonesRojos.png" alt="Pantalones Rojos" style="
+            padding: 0;
+            margin: 0;
+            width: 80px;
+            border-radius: 5px;
+            border: black;
+            border: solid;"
+            onclick="document.getElementById('piernas').innerHTML = 
+            '<img src=\'assets/legoCreator/pantalonesRojos.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorPantalones' src="assets/legoCreator/blank.png" alt="" style="
+            padding: 0;
+            margin: 0;
+            width: 80px;
+            border-radius: 5px;
+            border: black;
+            border: solid;"
+            onclick="document.getElementById('piernas').innerHTML = 
+            '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+          <img id='selectorPantalones' src="assets/legoCreator/blank.png" alt="" style="
+          padding: 0;
+          margin: 0;
+          width: 80px;
+          border-radius: 5px;
+          border: black;
+          border: solid;"
+            onclick="document.getElementById('piernas').innerHTML = 
+          '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; this.style.backgroundColor='rgb(0,0,0,0.1)'">
+
+      </tr>
+    </table>
+
+    <!-- Muñeco de ejemplo -->
+    <table style="padding-top: 25%">
+      <tr>
+
+        <!-- Gorro  -->
+
+        <!-- Gorro Delante -->
+        <td id="gorro1" style="
+        padding-left: 60%;
+        margin-top: -22.5%;
+        position: absolute;
+        z-index: 889;
         ">
-        
-        <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('gorro1').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
-      document.getElementById('gorro2').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
-      ">
+          <img src="assets/legoCreator/gorritoSafariDelante.png" alt="Gorro Safari Delante" style="width: 170px;">
+        </td>
 
-        <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('gorro1').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
-      document.getElementById('gorro2').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; 
-      ">
-      </td>
-    </tr>
+        <!-- Gorro Detrás -->
+        <td id="gorro2" style="
+        padding-left: 60%;
+        margin-top: -345px;
+        position: absolute;
+        z-index: 880;
+        ">
+          <img src="assets/legoCreator/gorritoSafariDetras.png" alt="Gorro Safari Detrás" style="width: 170px;">
+        </td>
 
-    <tr>
-      <!-- Cabeza -->
-      <td style="height: 10px;">
-        <img src="assets/cabeza.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cabeza').innerHTML = 
-      '<img src=\'assets/cabeza.png\' style=\'width: 170px;\'>'; ">
+        <!-- Cabeza -->
+        <td id="cabeza" style="
+        padding-left: 60%;
+        margin-top: -22.8%;
+        position: absolute;
+        z-index: 887;
+        ">
+          <img src="assets/legoCreator/caraBasica.png" alt="Cara Básica" style="width: 170px;">
+        </td>
 
-        <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cabeza').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; ">
+        <!-- Cuerpo -->
+        <td id="cuerpo" style="
+        padding-left: 60%;
+        margin-top: -18.5%;
+        position: absolute;
+        z-index: 888;
+        ">
+          <img src="assets/legoCreator/camisetaRoja.png" alt="Camiseta Roja" style="width: 170px;">
+        </td>
 
-      <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cabeza').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; ">
+        <!-- Piernas -->
+        <td id="piernas" style="
+        padding-left: 60%;
+        margin-top: -14%;
+        position: absolute;
+        z-index: 887;
+        ">
+          <img src="assets/legoCreator/pantalonesNegros.png" alt="Pantalones Negros" style="width: 170px;">
+        </td>
 
-      <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cabeza').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; ">
+        <!-- Manos -->
+        <td id="manos" style="
+        padding-left: 60%;
+        margin-top: -18.5%;
+        position: absolute;
+        z-index: 888;
+        ">
+          <img src="assets/legoCreator/manosBasicas.png" alt="Manos" style="width: 170px;">
+        </td>
 
-      </td>
-    </tr>
+      </tr>
 
-    <tr>
-      <!-- Camiseta  -->
-      <td style="height: 10px;">
-        <img src="assets/camisetaRoja.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
-      '<img src=\'assets/camisetaRoja.png\' style=\'width: 170px;\'>';">
-
-        <img src="assets/camisetaSanta.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
-      '<img src=\'assets/camisetaSanta.png\' style=\'width: 170px;\'>';">
-
-
-      <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>';">
-
-      <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('cuerpo').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>';">
-      
-    </td>
-
-    </tr>
-    <tr>
-      <!-- piernas -->
-      <td style="height: 10px;">
-        <img src="assets/piernasBasico.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('piernas').innerHTML = 
-      '<img src=\'assets/piernasBasico.png\' style=\'width: 170px;\'>'; ">
-
-        <img src="assets/piernas.png" alt="gorritoSafari" style="
-        padding: 0;
-        margin: 0;
-        width: 80px;
-        border: black;
-        border: solid;" onmousedown="document.getElementById('piernas').innerHTML = 
-        '<img src=\'assets/piernas.png\' style=\'width: 170px;\'>'; ">
-
-        <img src="assets/blank.png" alt="gorritoSafari" style="
-        padding: 0;
-        margin: 0;
-        width: 80px;
-        border: black;
-        border: solid;" onmousedown="document.getElementById('piernas').innerHTML = 
-        '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; ">
-
-         <img src="assets/blank.png" alt="gorritoSafari" style="
-      padding: 0;
-      margin: 0;
-      width: 80px;
-      border: black;
-      border: solid;" onmousedown="document.getElementById('piernas').innerHTML = 
-      '<img src=\'assets/blank.png\' style=\'width: 170px;\'>'; ">
-
-    </tr>
-  </table>
-  <!-- Muñecajo de ejemplo -->
-
-  <table style="padding-top: 25%">
-    <tr>
-
-      <!-- Gorro  -->
-
-      <!-- Gorro Delante -->
-      <td id="gorro1" style="
-    padding-left: 60%;
-    margin-top: -22.5%;
-    position: absolute;
-    z-index: 888;
-    ">
-        <img src="assets/gorritoSafariDelante.png" alt="gorrito" style="width: 170px;">
-      </td>
-
-
-
-      <!-- Gorro Detrás -->
-      <td id="gorro2" style="
-    padding-left: 60%;
-    margin-top: -23%;
-    position: absolute;
-    z-index: 880;
-    ">
-        <img src="assets/gorritoSafariDetras.png" alt="gorrito" style="width: 170px;">
-      </td>
-
-      <!-- Cabeza -->
-      <td id="cabeza" style="
-    padding-left: 60%;
-    margin-top: -22.8%;
-    position: absolute;
-    z-index: 887;
-    ">
-        <img src="assets/caraBasica.png" alt="gorrito" style="width: 170px;">
-      </td>
-
-      <!-- cuerpoBasico -->
-      <td id="cuerpo" style="
-    padding-left: 60%;
-    margin-top: -18.5%;
-    position: absolute;
-    z-index: 888;
-    ">
-        <img src="assets/camisetaRoja.png" alt="gorrito" style="width: 170px;">
-      </td>
-
-      <!-- Piernas -->
-      <td id="piernas" style="
-    padding-left: 60%;
-    margin-top: -14%;
-    position: absolute;
-    z-index: 887;
-    ">
-        <img src="assets/piernas.png" alt="gorrito" style="width: 170px;">
-      </td>
-
-      <!-- Manos -->
-      <td id="manos" style="
-    padding-left: 60%;
-    margin-top: -18.5%;
-    position: absolute;
-    z-index: 888;
-    ">
-        <img src="assets/manos.png" alt="Manos" style="width: 170px;">
-      </td>
-
-    </tr>
+    </table>
 
   </table>
-
 
 </body>
-
-
 
 </html>
