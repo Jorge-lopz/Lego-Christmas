@@ -6,7 +6,7 @@
 
 <html>
 
-<!--Imports-->
+<!--IMPORTS-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,12 @@
     href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
 
-
-<!--Header-->
-
 <head>
     <title>Inicio | LEGO®</title>
-    <link rel="icon" href="assets/legoIcon.png">
+    <link rel="icon" href="assets/icons/legoIcon.png">
 </head>
+
+<!--HEADER-->
 
 <header id="header" style="background-color:#ffcf00;
         box-shadow: #000000 -5px -5px 15px;
@@ -46,27 +45,35 @@
 
 
     <a href="#" style="float: left;">
-        <img src="assets/legoLogo.png" alt="Zoo Logo" width="55px" height="55px"
+        <img src="assets/icons/legoLogo.png" alt="Zoo Logo" width="55px" height="55px"
             style="margin-top: -5px; box-shadow: #00000050 0px 0px 1px;">
     </a>
 
-    <img src="assets/bag-icon-shopping-bag-icon-bag-logo-bag-illustration-free-vector-removebg-preview.png"
-        alt="Carrito" width="75px" style="margin-top: -17px; float: right">
+    <!--Enlazar a 'Pagina en construccion'-->
+    <a href=""><img src="assets/icons/shoppingBagIcon.png" alt="Carrito" width="60px"
+            style="margin-top: -10px; float: right;">
+    </a>
 
-    <table cellspacing="0" cellpadding="0" style="float: right;
+    <table cellspacing="0" cellpadding="0" onmouseleave="document.getElementById('search_bar').style.display='none';"
+        onmouseout="this.style.boxShadow='#00000020 2px 2px 4px'"
+        onmouseover="this.style.boxShadow='#00000030 3px 3px 5px'" style="float: right;
         background-color:#ffffff; 
         padding-left: 1px;
         padding-bottom: 1px;
         padding-left: 2px;
         padding-right: 2px;
         border-radius: 11px;
-        box-shadow: #00000030 3px 3px 5px;">
+        z-index: 10001;
+        box-shadow: #00000020 2px 2px 4px;">
         <tr>
             <td>
                 <!--Make it so a click on the icon also shows a translucent layer over everything else to detect clicks outside -->
                 <!--Fix the search bar to autofocus -->
-                <img src="assets/search.png" alt="Busqueda" width="40px" style="margin-right: 1px"
-                    onclick="getElementById('search_bar').style.display='block'; getElementById('search_bar').autofocus=true">
+                <a href="javascript:;"><img src="assets/icons/search.png" alt="Busqueda" width="40px"
+                        style="margin-right: 1px"
+                        onclick="document.getElementById('search_bar').style.display='block';">
+
+                </a>
             </td>
             <td>
                 <input id="search_bar" type="search" placeholder="Buscar..."
@@ -79,19 +86,62 @@
 
 </header>
 
-<body style="overflow-x:hidden;">
+<!--FOOTER-->
+
+<footer id="footer" style="
+    position: fixed;
+    display: none;
+    width:100%;
+    left: 0px;
+    top: 90%;
+    z-index:9998">
+
+    <button
+        onmouseover="this.style.backgroundColor='rgb(200, 200, 200, 0.9)'; document.getElementById('footerImage').style.filter='drop-shadow(#ffffff 2px 2px 10px)'"
+        onmouseout="this.style.backgroundColor='#ffffff'; document.getElementById('footerImage').style.filter='drop-shadow(#ffffff 2px 2px 0px)'"
+        style="
+        margin-left: 19px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        display: inline-block;
+        background-color: #ffffff;
+        border: 2px solid black;
+        box-shadow: black 1px 1px 5px;
+        border-radius: 50px;">
+        <a href="#"><img id="footerImage" src="assets/icons/legoArrow.png" width="40px"
+                onclick="document.getElementById('footer').style.display='none'"></a>
+        <!--Make the 'onclick' also make me go to the top after hiding the footer-->
+</footer>
+
+<!--BODY-->
+
+<body style="overflow-x:hidden;" onscroll="document.getElementById('footer').style.display='block'">
 
     <!--Background-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: absolute" width=102%
         autoplay loop muted src="assets/Lego Christmas Video.mp4">
     </video>
 
-    <img src="assets/LucesNavidadHeader.png" style="position:fixed; margin-top: 67px; margin-left: -1%; z-index:-990; "
+    <img src="assets/LucesNavidadHeader.png" style="position:fixed; margin-top: 4.2%; margin-left: -1%; z-index:-990; "
         width="101%">
 
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!--CONTENT-->
+
+    <!--Call to Action-->
+    <table style="position: absolute;">
+        <tr>
+            <td style="color:white">HIIII</td>
+        </tr>
+        <tr>
+            <td><!--Happy Christmas Message--></td>
+            <td><!--Call to Action Button - SHOP--></td>
+        </tr>
+    </table>
+
     <br><br><br><br><br>
     <br><br><br><br><br>
     <br><br><br><br><br>
