@@ -32,6 +32,7 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background-color: rgb(0,0,0,0.1);
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
@@ -51,7 +52,6 @@
             margin: 0;
             width: 80px;
             border-radius: 5px;
-            background-color: rgb(0,0,0,0.1);
             border: black;
             border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
             '<img src=\'assets/legoCreator/barbaGorroSanta.png\' style=\'width: 170px;\'>'; 
@@ -110,6 +110,7 @@
           padding: 0;
           margin: 0;
           width: 80px;
+          background-color: rgb(0,0,0,0.1);
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
@@ -124,7 +125,6 @@
           padding: 0;
           margin: 0;
           width: 80px;
-          background-color: rgb(0,0,0,0.1);
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
@@ -175,9 +175,11 @@
           margin: 0;
           width: 80px;
           border-radius: 5px;
+          background-color: rgb(0,0,0,0.1);
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaBasica.png\' style=\'width: 170px;\'>';
+          document.getElementById('manos').style.display='block';
           document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
@@ -190,10 +192,10 @@
             margin: 0;
             width: 80px;
             border-radius: 5px;
-            background-color: rgb(0,0,0,0.1);
             border: black;
             border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaSanta.png\' style=\'width: 170px;\'>';
+          document.getElementById('manos').style.display='block';
           document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
@@ -210,6 +212,7 @@
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaElfo.png\' style=\'width: 170px;\'>';
+          document.getElementById('manos').style.display='block';
           document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
@@ -225,6 +228,7 @@
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaReno.png\' style=\'width: 170px;\'>';
+          document.getElementById('manos').style.display='none';
           document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
@@ -236,16 +240,17 @@
       <tr>
         <!-- Pantalones -->
         <td style="height: 10px;">
-          <img id='selectorPantalones1' src="assets/legoCreator/pantalonesGrises.png" alt="Pantalones Grises"
+          <img id='selectorPantalones1' src="assets/legoCreator/pantalonesMarrones.png" alt="Pantalones Grises"
             draggable="false" style="
             user-select: none;
             padding: 0;
             margin: 0;
             width: 80px;
             border-radius: 5px;
+            background-color: rgb(0,0,0,0.1);
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
-          '<img src=\'assets/legoCreator/pantalonesGrises.png\' style=\'width: 170px;\'>'; 
+          '<img src=\'assets/legoCreator/pantalonesMarrones.png\' style=\'width: 170px;\'>'; 
           document.getElementById('selectorPantalones2').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorPantalones3').style.backgroundColor='rgb(0,0,0,0)';
           document.getElementById('selectorPantalones4').style.backgroundColor='rgb(0,0,0,0)';
@@ -257,7 +262,6 @@
             padding: 0;
             margin: 0;
             width: 80px;
-            background-color: rgb(0,0,0,0.1);
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
@@ -314,7 +318,7 @@
         position: absolute;
         z-index: 900;
         ">
-          <img src="assets/legoCreator/barbaGorroSanta.png" draggable="false" style="width: 170px;">
+          <img src="assets/legoCreator/peloBasico.png" draggable="false" style="width: 170px;">
         </td>
 
         <!-- Gorro Detrás -->
@@ -336,7 +340,7 @@
         position: absolute;
         z-index: 898;
         ">
-          <img src="assets/legoCreator/caraSanta.png" draggable="false" style="width: 170px;">
+          <img src="assets/legoCreator/caraBasica.png" draggable="false" style="width: 170px;">
         </td>
 
         <!-- Cuerpo -->
@@ -347,7 +351,7 @@
         position: absolute;
         z-index: 899;
         ">
-          <img src="assets/legoCreator/camisetaSanta.png" draggable="false" style="width: 170px;">
+          <img src="assets/legoCreator/camisetaBasica.png" draggable="false" style="width: 170px;">
         </td>
 
         <!-- Piernas -->
@@ -358,7 +362,7 @@
         position: absolute;
         z-index: 897;
         ">
-          <img src="assets/legoCreator/pantalonesSanta.png" draggable="false" style="width: 170px;">
+          <img src="assets/legoCreator/pantalonesMarrones.png" draggable="false" style="width: 170px;">
         </td>
 
         <!-- Manos -->
