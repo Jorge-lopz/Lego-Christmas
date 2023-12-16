@@ -25,7 +25,7 @@
 
 <header id="header" style="background-image: url('assets/bannerAmarillo.png');
         background-size: contain;
-        box-shadow: #000000 -5px -5px 15px;
+        box-shadow: rgb(0, 0, 0) -1px 1px 3px;
         display: block;
         position: fixed;
         padding:1%;
@@ -49,7 +49,7 @@
 
     <a href="" style="float: left;">
         <img src="assets/icons/legoLogo.png" alt="Legoo Logo" width="55px" height="55px"
-            style="margin-top: -6px; margin-left: 30%; box-shadow: #00000050 0px 0px 1px;">
+            style="user-select: none; margin-top: -6px; margin-left: 30%; box-shadow: #00000050 0px 0px 1px;">
     </a>
 
     <a href="tienda.html" onmouseover="this.style.textDecoration='underline'"
@@ -92,14 +92,37 @@
         font-size: 17px;"> AYUDA
     </a>
 
+    <a href="legoCreator.html">
+        <button
+            onmouseover="this.style.backgroundColor='#ffffffff'; this.style.boxShadow='rgb(0, 0, 0, 0.5) 1px 2px 2px'"
+            onmouseout="this.style.backgroundColor='#ffffffde';  this.style.boxShadow='rgb(0, 0, 0) 2px 3px 2px'" style="float: left; 
+            margin-top: 0.1%; 
+            margin-left: 16.3%; 
+            background-color: #ffffffde;
+            padding-top: 0.3%;
+            padding-bottom: 0.3%;
+            padding-right: 1%;
+            padding-left: 1%;
+            cursor: pointer;
+            color:#000000; text-decoration: none;
+            font-family: Poppins; 
+            font-stretch: condensed;
+            font-weight:600;
+            box-shadow: rgb(0, 0, 0) 2px 3px 2px;
+            user-select: none;
+            font-size: 17px;">
+            ¡CREA TU LEGO!
+        </button>
+    </a>
+
     <!--Enlazar a 'Pagina en construccion'-->
-    <a href=""><img src="assets/icons/shoppingBagIconWhite.png" alt="Carrito" width="60px"
-            style="margin-top: -10px; float: right;">
+    <a href="enConstruccion.html"><img src="assets/icons/shoppingBagIconWhite.png" alt="Carrito" width="70px"
+            style="user-select: none; margin-top: -17px; float: right;">
     </a>
 
     <table cellspacing="0" cellpadding="0" onmouseleave="document.getElementById('search_bar').style.display='none';"
         onmouseout="this.style.boxShadow='#00000020 2px 2px 4px'"
-        onmouseover="this.style.boxShadow='#00000030 3px 3px 5px'" style="float: right;
+        onmouseover="this.style.boxShadow='#00000030 3px 3px 5px'" style="user-select: none; float: right;
         background-color:#ffffff; 
         padding-left: 1px;
         padding-bottom: 1px;
@@ -107,7 +130,7 @@
         padding-right: 2px;
         border-radius: 50px;
         margin-top: -2px;
-        box-shadow: #00000020 2px 2px 4px;">
+        box-shadow: #00000050 0px 0px 4px;">
         <tr>
             <td>
                 <a href="javascript:;"><img src="assets/icons/search.png" alt="Busqueda" width="40px"
@@ -127,17 +150,17 @@
 
 </header>
 
-<!--FOOTER--> <!--Fix onclick action (unify goinf to the top of the page and hding the element)-->
+<!--FOOTER-->
 
-<footer id="footer" style="
+<footer style="
     position: fixed;
-    display: none;
+    display: block;
     width:100%;
     left: 0px;
     top: 90%;
     z-index:9998">
 
-    <button
+    <button id="footerButton" onclick="window.scrollTo(0,0); this.style.display='none';"
         onmouseover="this.style.backgroundColor='rgb(200, 200, 200, 0.9)'; document.getElementById('footerImage').style.filter='drop-shadow(#ffffff 2px 2px 10px)'"
         onmouseout="this.style.backgroundColor='#f3f3f3f6'; document.getElementById('footerImage').style.filter='drop-shadow(#ffffff 2px 2px 25px)'"
         style="
@@ -146,32 +169,31 @@
         padding-right: 6px;
         padding-top: 5px;
         padding-bottom: 3px;
-        display: inline-block;
+        display: none;
         background-color: #f3f3f3f6;
         border: 2px solid black;
         box-shadow: black 1px 1px 5px;
         border-radius: 50px;">
-        <a onclick="document.getElementById('footer').style.display='none'; href='#'"><img id="footerImage"
-                src="assets/icons/legoArrow.png" width="40px"></a>
-        <!--Make the 'onclick' also make me go to the top after hiding the footer-->
+        <img id="footerImage" src="assets/icons/legoArrow.png" width="40px">
 </footer>
 
 <!--BODY-->
 
-<body style="overflow-x:hidden;" onscroll="document.getElementById('footer').style.display='inline-block'">
+<body style="overflow-x:hidden;"
+    onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };">
 
     <!--Background-->
-    <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: absolute" width=102%
+    <video style=" background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
         autoplay loop muted src="assets/Lego Christmas Video.mp4">
     </video>
 
-    <img src="assets/LucesNavidadHeader.png" style="position:fixed; margin-top: 4.2%; margin-left: -1%; z-index:-990; "
-        width="101%">
+    <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
+        style="position:fixed; margin-top: 4.2%; margin-left: -1%; z-index:-990; " width="101%">
 
     <!--CONTENT-->
 
     <!--Welcome Message and call to Action-->
-    <table style="margin-top: 20%; margin-left:50px; position: absolute;  z-index:-995;">
+    <table style="margin-top: 18%; margin-left:50px; position: fixed;  z-index:-995;">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:60px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
@@ -184,30 +206,15 @@
             <td
                 style="margin-top: 40px; color:white; font-family: Mada; font-size:25px; font-weight: 400; text-shadow: #00000090 0 0 10px;">
                 Desde <b>LEGO®</b> os deseamos una Feliz Navidad y<br> un próspero Año Nuevo lleno de alegría e ilusión.
-                <br><br><i>Desde 1932 construyendo, pieza a pieza, un mundo mejor.</i>
+                <br><br><i style="font-size:24px;">Desde 1932 construyendo,</i><b> pieza a pieza</b><i
+                    style="font-size:24px;">, un mundo mejor.</i>
             </td>
             <td><!--Call to Action Button - SHOP--></td>
         </tr>
     </table>
 
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-
+    <img src="assets/whiteBackground.png"
+        style="position: relative; width: 102%; margin-top: 41%; margin-left: -1%; z-index:0">
 
 </body>
 
