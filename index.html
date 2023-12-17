@@ -179,8 +179,8 @@
 
 <!--BODY-->
 
-<body style="overflow-x:hidden; user-select: none;"
-    onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };">
+<body style="overflow-x:hidden; user-select: none;" onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };
+    document.getElementById('lucesHeader').style.marginTop=(65-window.scrollY*0.08)+'px'">
 
     <!--Background-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
@@ -188,7 +188,7 @@
     </video>
 
     <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
-        style="position:fixed; margin-top: 4.2%; margin-left: -1%; z-index:-990; " width="101%">
+        style="position:fixed; margin-top: 65px; margin-left: -1%; z-index:-990; " width="101%">
 
     <!--CONTENT-->
 
