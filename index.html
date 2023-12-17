@@ -179,11 +179,11 @@
 
 <!--BODY-->
 
-<body style="overflow-x:hidden;"
+<body style="overflow-x:hidden; user-select: none;"
     onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };">
 
     <!--Background-->
-    <video style=" background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
+    <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
         autoplay loop muted src="assets/Lego Christmas Video.mp4">
     </video>
 
@@ -193,7 +193,7 @@
     <!--CONTENT-->
 
     <!--Welcome Message and call to Action-->
-    <table style="margin-top: 18%; margin-left:50px; position: fixed;  z-index:-995;">
+    <table style="margin-top: 18%; margin-left:50px; position: fixed; z-index:0;">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:60px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
@@ -203,18 +203,22 @@
             <td style="height: 5px;"></td>
         </tr>
         <tr>
-            <td
-                style="margin-top: 40px; color:white; font-family: Mada; font-size:25px; font-weight: 400; text-shadow: #00000090 0 0 10px;">
+            <td style="margin-top: 40px; 
+                color:white;
+                font-family: Mada;
+                font-size:25px;
+                font-weight: 400;
+                text-shadow: #00000090 0 0 10px;">
                 Desde <b>LEGO®</b> os deseamos una Feliz Navidad y<br> un próspero Año Nuevo lleno de alegría e ilusión.
-                <br><br><i style="font-size:24px;">Desde 1932 construyendo,</i><b> pieza a pieza</b><i
-                    style="font-size:24px;">, un mundo mejor.</i>
+                <br><br>
+                <i style="font-size:24px;">Desde 1932 construyendo,</i><b> pieza a pieza</b><i>, un mundo mejor.</i>
             </td>
-            <td><!--Call to Action Button - SHOP--></td>
         </tr>
     </table>
 
+    <!--White Background for the rest of the page-->
     <img src="assets/whiteBackground.png"
-        style="position: relative; width: 102%; margin-top: 41%; margin-left: -1%; z-index:0">
+        style="position: relative; width: 102%; margin-top: 41%; margin-left: -1%; z-index:1">
 
 </body>
 
