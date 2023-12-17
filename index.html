@@ -13,7 +13,8 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend:wght@100;200;300;400;500;600&family=Mada:wght@200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Poppins:wght@300;400&display=swap"
     rel="stylesheet">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Lato:wght@300;900&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 <!--HEAD-->
 
 <head>
@@ -218,10 +219,10 @@
 
     <!--White Background for the rest of the page-->
     <img src="assets/whiteBackground.png"
-        style="position: relative; width: 102%; margin-top: 41%; margin-left: -1%; z-index:1">
+        style="position: relative; width: 102%; margin-top: 41%; margin-left: -1%; z-index:1;">
 
 
-    <!--Compra tu regalo ya -->
+<!--Compra tu regalo ya -->
 
     <img style="
     background-image: url('assets/Holiday23-GiftHub-Landing-202309-Hero-Standard-Large.jpg');
@@ -231,9 +232,10 @@
     z-index: 1;
     margin: -0.7%;
     position: relative;
+    float: left;
     ">
     
-    <table style="margin-top: -25%; margin-left:50px; position: fixed; z-index:3; position: absolute; padding-left: 5%;">
+    <table style="margin-top: 5%; margin-left:50px; position: fixed; z-index:3; position: absolute; padding-left: 5%;">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
@@ -256,6 +258,124 @@
         </tr>
     </table>
 
+<!-- Nuevos sets populares -->
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+<!-- Envíos y ayuda -->   
+<br><br><br>
+<table cellspacing="-5px" style="
+width: 90%;
+min-height: 200px;
+border-radius: 18px;
+background-color: #008381;
+margin-left: 5%;
+z-index: 5;
+position: relative;
+padding-left: 0px;
+padding-top: 2%;">
+    <tr>
+        <td rowspan="2" style="width: 150px; padding-left: 5%;">
+            <img src="assets/LegoChristmasTree.png" style="height: 150px;" alt="">
+        </td>
+
+        <td style="width: 120px; height: 100px;">
+            <a href="enConstruccion.html">
+                <img src="assets/icono_tiendas.png" alt="Ubicacion"
+                onmouseover="document.getElementById('ubicacion').style.color='#022968';"
+                onmouseleave="document.getElementById('ubicacion').style.color='white'">
+            </a>
+        </td>
+        <td style="width: 120px; height: 100px;">
+            <a href="enConstruccion.html">
+                <img src="assets/icono_envios.png" alt="envios"
+                onmouseover="document.getElementById('envios').style.color='#022968';"
+                onmouseleave="document.getElementById('envios').style.color='white'">
+            </a>
+        </td><td style="width: 120px; height: 100px;">
+            <a href="enConstruccion.html">
+                <img src="assets/icono_recogida.png" alt="recogida"
+                onmouseover="document.getElementById('recogida').style.color='#022968';"
+                onmouseleave="document.getElementById('recogida').style.color='white'">
+            </a>
+        </td><td style="width: 120px; height: 100px;">
+            <a href="enConstruccion.html">
+                <img src="assets/icono_ayuda.png" alt="ayuda"
+                onmouseover="document.getElementById('ayuda').style.color='#022968';"
+                onmouseleave="document.getElementById('ayuda').style.color='white'">
+            </a>
+        </td>
+        <td rowspan="2" style="width: 150px; padding-left: 5%;">
+            <img src="assets/LegoChristmasTree.png" style="height: 150px;" alt="">
+        </td>
+
+    </tr>
+    <tr>
+        <td id="ubicacion" style="
+            color: white; 
+            margin-top: -100px;
+            padding-left: 2.2%;
+            font-family: Roboto;
+            font-weight: 400;">
+
+            <span 
+            onmouseover="this.style.color='#022968';"
+            onmouseleave="this.style.color='white'"
+            style="margin-top: -30px;">Ubicación
+            </span>
+
+        </td>
+        <td id="envios" style="
+        color: white; 
+        margin-top: -100px;
+        padding-left: 3%;
+        font-family: Roboto;
+        font-weight: 400;">
+
+            <span 
+            onmouseover="this.style.color='#022968';"
+            onmouseleave="this.style.color='white'"
+            style="margin-top: -30px;">Envíos
+            </span>
+
+        </td><td id="recogida" style="
+        color: white;
+        margin-top: -100px;
+        padding-left: 2.5%;
+        font-family: Roboto;
+        font-weight: 400;">
+
+            <span 
+            onmouseover="this.style.color='#022968';"
+            onmouseleave="this.style.color='white'"
+            style="margin-top: -30px;">Recogida
+            </span>
+
+        </td>
+        <td id="ayuda" style="
+        color: white; 
+        margin-top: -100px;
+        padding-left: 3%;
+        font-family: Roboto;
+        font-weight: 400;">
+
+            <span 
+            onmouseover="this.style.color='#022968';"
+            onmouseleave="this.style.color='white'"
+            style="margin-top: -30px;">Ayuda
+            </span>
+
+        </td>
+        
+    </tr>
+    
+
+</table>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
 </body>
 
 </html>
