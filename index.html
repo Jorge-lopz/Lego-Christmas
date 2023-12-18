@@ -234,10 +234,9 @@
     margin: -0.7%;
     margin-top:45.2%;
     position: relative;
-    float: left;
     ">
 
-    <table style="margin-top: 45.2%; margin-left:50px; position: relative; z-index:3; padding-left: 5%;">
+    <table style="margin-top: -25%; margin-left:50px; position: absolute; z-index:3; padding-left: 5%; ">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
@@ -327,9 +326,9 @@
 
             <td id="juguete3" style="
             width: 30%;
-            opacity: 1;" onmouseover="document.getElementById('juguete1').style.opacity='0.5';
-                document.getElementById('juguete2').style.opacity='0.5';
-                document.getElementById('juguete4').style.opacity='0.5'" onmouseleave="document.getElementById('juguete1').style.opacity='1';
+            opacity: 1;"
+                onmouseover="document.getElementById('juguete1').style.opacity='0.5';document.getElementById('juguete2').style.opacity='0.5';document.getElementById('juguete4').style.opacity='0.5'"
+                onmouseleave="document.getElementById('juguete1').style.opacity='1';
                 document.getElementById('juguete2').style.opacity='1';
                 document.getElementById('juguete4').style.opacity='1';
             ">
@@ -338,11 +337,9 @@
 
             <td id="juguete4" style="
             width: 25%;
-            opacity: 1;" onmouseover="document.getElementById('juguete1').style.opacity='0.5';
-                document.getElementById('juguete2').style.opacity='0.5';
-                document.getElementById('juguete3').style.opacity='0.5'" onmouseleave="document.getElementById('juguete1').style.opacity='1';
-                document.getElementById('juguete2').style.opacity='1';
-                document.getElementById('juguete3').style.opacity='1';
+            opacity: 1;"
+                onmouseover="document.getElementById('juguete1').style.opacity='0.5'; document.getElementById('juguete2').style.opacity='0.5'; document.getElementById('juguete3').style.opacity='0.5'"
+                onmouseleave="document.getElementById('juguete1').style.opacity='1'; document.getElementById('juguete2').style.opacity='1'; document.getElementById('juguete3').style.opacity='1';
             ">
                 <img src="assets/cascanueces.png" alt="" style="height: 200px;">
             </td>
@@ -377,28 +374,28 @@
 
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icono_tiendas.png" alt="Ubicacion"
+                    <img src="assets/icons/icono_tiendas.png" alt="Ubicacion"
                         onmouseover="document.getElementById('ubicacion').style.color='#022968';"
                         onmouseleave="document.getElementById('ubicacion').style.color='white'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icono_envios.png" alt="envios"
+                    <img src="assets/icons/icono_envios.png" alt="envios"
                         onmouseover="document.getElementById('envios').style.color='#022968';"
                         onmouseleave="document.getElementById('envios').style.color='white'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icono_recogida.png" alt="recogida"
+                    <img src="assets/icons/icono_recogida.png" alt="recogida"
                         onmouseover="document.getElementById('recogida').style.color='#022968';"
                         onmouseleave="document.getElementById('recogida').style.color='white'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icono_ayuda.png" alt="ayuda"
+                    <img src="assets/icons/icono_ayuda.png" alt="ayuda"
                         onmouseover="document.getElementById('ayuda').style.color='#022968';"
                         onmouseleave="document.getElementById('ayuda').style.color='white'">
                 </a>
@@ -408,6 +405,8 @@
             </td>
 
         </tr>
+
+
         <tr>
             <td id="ubicacion" style="
             color: white; 
