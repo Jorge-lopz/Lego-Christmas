@@ -26,7 +26,7 @@
 
 <!--HEADER-->
 
-<header id="header" style="background-image: url('assets/bannerAmarillo.png');
+<header id="header" style="background-image: url('assets/headerAmarillo.png');
         background-size: cover;
         box-shadow: rgb(0, 0, 0) -1px 1px 3px;
         display: block;
@@ -246,7 +246,7 @@
         src="assets/music.mp3" type="audio/mpeg"></audio>
 
 
-    <!--Background-->
+    <!--Background, Header Lights & Scroll Gif-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
         autoplay loop muted src="assets/Lego Christmas Video.mp4">
     </video>
@@ -283,17 +283,18 @@
         </tr>
     </table>
 
-    <!--White Background for the rest of the page-->
-    <img draggable="false" src="assets/whiteBackground.png"
-        style="position: absolute;  width: 102%; margin-top: 41%; margin-left: -1%; z-index:1;">
+    <!--Background for the rest of the page-->
+    <img draggable="false" src="assets/mainBackground.png"
+        style="position: absolute; filter: drop-shadow(#260305aa 0 0 5px); width: 102%; margin-top: 41%; margin-left: -1%; z-index:1;">
 
     <!--¿Tienes ya tu regalo?-->
 
-    <img draggable="false" width="102%" src="assets/bannerRegalos.jpg" style="
+    <img draggable="false" width="102.5%" src="assets/bannerRegalos.jpg" style="
     z-index: 2; 
-    margin-left: -0.7%;
     margin-top:48.5%;
+    margin-left: -2%;
     position: relative;">
+
     <table
         style="margin-top: -25%; user-select:text; margin-left:50px; position: absolute; z-index:3; padding-left: 5%; ">
         <tr>
@@ -319,13 +320,12 @@
         </tr>
     </table>
 
-    <!-- Nuevos sets populares -->
-
+    <!--Nuevos sets populares-->
     <table id="juguetes" cellpadding="20px" style="
         padding-left: 4%;
-        margin-left: -1%;
         margin-top: -4px;
-        width: 102%;
+        margin-left: -2%;
+        width: 102.5%;
         background-color: #008381;
         padding-top: 2%;
         position: relative;
@@ -397,42 +397,78 @@
         </tr>
     </table>
 
-    <img draggable="false" width="102%" src="assets/changeColorBanner.jpg" style="
+    <!--Change Color Banner-->
+    <img draggable="false" width="102.5%" src="assets/changeColorBanner.jpg" style="
     z-index: 2; 
-    margin-left: -0.7%;
+    margin-left: -2%;
     position: relative;">
 
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
+    <!-- ... -->
+    <img draggable="false" width="102.5%" src="assets/bannerMoto.jpg" style="
+        z-index: 2; 
+        margin-top:-0.3%;
+        margin-left: -2%;
+        position: relative;">
+    <table
+        style="margin-top: -27%; user-select:text; margin-left:54%; position: absolute; z-index:3; padding-left: 5%; ">
+        <tr>
+            <td
+                style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
+                ¿Tienes ya tu regalo?</td>
+        </tr>
+        <tr>
+            <td style="height: 5px;"></td>
+        </tr>
+        <tr>
+            <td style="margin-top: 40px; 
+            color:white;
+            font-family: Mada;
+            font-size:25px;
+            font-weight: 400;
+            text-shadow: #00000090 0 0 10px;">
+                En <b>LEGO®</b> os ayudamos a llenar de ilusión <br> la cena navideña con nuestros increibles sets.
+                <br><br>
+                <a style="font-size:23px; font-weight: 600;">¡No dejes que tus ideas brillantes se desarmen antes de
+                    tiempo!
+            </td>
+        </tr>
+    </table>
+
+    <!--Blue Banner-->
+    <img draggable="false" width="102.5%" src="assets/bannerAzul.png" style="
+    z-index: 2; 
+    margin-top:-0.3%;
+    margin-left: -2%;
+    position: relative;">
 
     <!--Satisfacción cliente-->
-
-    <div style="margin-left: 23%;">
+    <div style="margin-left: 23%; margin-top: -14%">
         <img src="assets/satisfactionYellow.png" id="starFillLight" width="390px" heigth="90px" style="
-            position: absolute;
-            filter: opacity(0.4);
-            margin-left: 1%;
-            margin-top: 0.9%;
-            z-index: 6;">
+                position: absolute;
+                filter: opacity(0.6);
+                margin-left: 1%;
+                margin-top: 0.9%;
+                z-index: 6;">
         </img>
 
         <img src="assets/satisfactionYellow.png" id="starFill" width="390px" heigth="90px" style="
-            position: absolute;
-            margin-left: 1%;
-            margin-top: 0.9%;
-            z-index: 7;">
+                position: absolute;
+                margin-left: 1%;
+                margin-top: 0.9%;
+                z-index: 7;">
         </img>
 
         <table width="820px" height="96px" onmouseout="getElementById('starFillLight').style.marginLeft='1%'" style="
-            background-image: url('assets/satisfactionValoration.png');
-            background-size: cover;
-            position: relative;
-            z-index: 8;">
+                background-image: url('assets/satisfactionValoration.png');
+                background-size: cover;
+                filter: drop-shadow(#00000020 2px 2px 10px);
+                position: relative;
+                z-index: 8;">
 
             <tr>
                 <td>
                     <img draggable="false" src="assets/satisfactionFace.gif" height="80px"
-                        style="padding-top:4px; margin-right: -8px">
+                        style="padding-top:4px; margin-right: -8px;">
                 </td>
                 <td style="user-select:text; font-size:18px; color:#000; font-family: Lexend; font-weight: 500;">
                     ¿Te está gustando esta página?
@@ -458,8 +494,21 @@
 
     </div>
 
-    <!-- Envíos y ayuda -->
-    <br><br><br>
+    <!--Change Color Banner-->
+    <img draggable="false" width="102.5%" src="assets/changeColorBannerInvertido.jpg" style="
+        z-index: 2; 
+        margin-left: -2%;
+        position: relative;
+        margin-top: 7%">
+
+    <!--Red Banner-->
+    <img draggable="false" width="102.5%" height="500px" src="assets/bannerRojo.png" style="
+    z-index: 2; 
+    margin-top:-0.3%;
+    margin-left: -2%;
+    position: relative;">
+
+    <!--Envíos y ayuda-->
     <table cellspacing=" -5px" style="
     width: 90%;
     min-height: 200px;
