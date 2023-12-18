@@ -100,7 +100,7 @@
             onmouseover="this.style.backgroundColor='#ffffffff'; this.style.boxShadow='rgb(0, 0, 0, 0.5) 1px 2px 2px'"
             onmouseout="this.style.backgroundColor='#ffffffde';  this.style.boxShadow='rgb(0, 0, 0) 2px 3px 2px'" style="float: left; 
             margin-top: 0.1%; 
-            margin-left: 16.3%; 
+            margin-left: 15%; 
             background-color: #ffffffde;
             padding-top: 0.3%;
             padding-bottom: 0.3%;
@@ -183,7 +183,7 @@
 <!--BODY-->
 
 <body style="overflow-x:hidden; user-select: none;" onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };
-    document.getElementById('lucesHeader').style.marginTop=(65-window.scrollY*0.09)+'px'">
+    document.getElementById('lucesHeader').style.marginTop=(65-window.scrollY*0.092)+'px'">
 
     <!--Background-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
@@ -192,6 +192,9 @@
 
     <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
         style="position:fixed; margin-top: 65px; margin-left: -1%; z-index:-990; " width="101%">
+
+    <img src="assets/bajar.gif" width="4.5%"
+        style="position:fixed; margin-top: 38%; margin-left: 47.5%; z-index:-990; filter: drop-shadow(#00000099 0 0 5px);">
 
     <!--CONTENT-->
 
@@ -248,7 +251,8 @@
                 text-shadow: #00000090 0 0 10px;">
                 En <b>LEGO®</b> os ayudamos a llenar de ilusión <br> la cena navideña con nuestros increibles sets.
                 <br><br>
-                <a style="font-size:22px;">¡No dejes que tus ideas brillantes se desarmen antes de tiempo!
+                <a style="font-size:23px; font-weight: 600;">¡No dejes que tus ideas brillantes se desarmen antes de
+                    tiempo!
             </td>
         </tr>
     </table>
@@ -267,7 +271,7 @@
         text-align: center;
         color: white;
         font-size: 20px;
-        font-family: Roboto;
+        font-family: Mada;
         font-weight: 500;">
 
         <tr>
@@ -336,34 +340,57 @@
     margin-left: -0.7%;
     position: relative;">
 
-    <div data-test="cookie-sign-posting" class="CookieSignPostingstyles__Wrapper-sc-1ctz8kz-0 hfIARK">
-        <div class="CookieSignPostingstyles__Banner-sc-1ctz8kz-1 ICgEk">
-            <div class="CookieSignPostingstyles__CookieGuyImageContainer-sc-1ctz8kz-2 PKFQp"><img
-                    src="/_next/static/images/cookieguy-a8400ece3d416842cb83d9f1efc22662.png" alt="guy holding a cookie"
-                    class="CookieSignPostingstyles__CookieGuyImage-sc-1ctz8kz-4 dcOsdH"></div>
-            <div class="CookieSignPostingstyles__FlexWrapper-sc-1ctz8kz-3 ilLGOc">
-                <div class="CookieSignPostingstyles__TextAndLinksWrapper-sc-1ctz8kz-5 bUODFw"><span
-                        class="Text__BaseText-sc-13i1y3k-0 dxhase CookieSignPostingstyles__TitleText-sc-1ctz8kz-11 hDIcU"><span
-                            class="Markup__StyledMarkup-nc8x20-0 epIXnJ">¡Ayúdanos a crear la mejor experiencia
-                            personalizada para ti!</span></span><span
-                        class="Text__BaseText-sc-13i1y3k-0 jfYWV CookieSignPostingstyles__BodyText-sc-1ctz8kz-10 fhPyaT"><span
-                            class="Markup__StyledMarkup-nc8x20-0 epIXnJ">¡Ayúdanos a crear la mejor experiencia
-                            personalizada para ti! Danos tu permiso para utilizar cookies en el sitio y así podremos
-                            crear una experiencia que seguro te encantará.</span></span>
-                    <div class="CookieSignPostingstyles__LinksWrapper-sc-1ctz8kz-6 cHYyAq"><button kind="link"
-                            type="submit" data-test="cookie-sign-posting-primary-link"
-                            class="Button__Base-ae3gos-0 jaqNNF CookieSignPostingstyles__StyledButtonLink-sc-1ctz8kz-8 gZLGOB"><span
-                                class="Text__BaseText-sc-13i1y3k-0 XqGxc CookieSignPostingstyles__BodyText-sc-1ctz8kz-10 fhPyaT"><span
-                                    class="Markup__StyledMarkup-nc8x20-0 epIXnJ">¡Vamos allá!</span></span></button><a
-                            type="link" data-test="cookie-sign-posting-secondary-link"
-                            class="Linksstyles__Anchor-sc-684acv-0 friqQc CookieSignPostingstyles__StyledLink-sc-1ctz8kz-9 cWwCGk"
-                            href="/es-es/cookie-policy"><span
-                                class="Text__BaseText-sc-13i1y3k-0 XqGxc CookieSignPostingstyles__BodyText-sc-1ctz8kz-10 fhPyaT"><span
-                                    class="Markup__StyledMarkup-nc8x20-0 epIXnJ">Más información</span></span></a></div>
-                </div><img src="/_next/static/images/cookies-afb23abdf31dc35a6f446c474ef33678.png" alt="cookies"
-                    class="CookieSignPostingstyles__CookiesImage-sc-1ctz8kz-7 cMERrW">
-            </div>
-        </div>
+    <!--Satisfacción cliente-->
+
+    <div style="margin-left: 23%;">
+        <img src="assets/satisfactionYellow.png" id="starFillLight" width="390px" heigth="90px" style="
+            position: absolute;
+            filter: opacity(0.4);
+            margin-left: 1%;
+            margin-top: 0.9%;
+            z-index: 6;">
+        </img>
+
+        <img src="assets/satisfactionYellow.png" id="starFill" width="390px" heigth="90px" style="
+            position: absolute;
+            margin-left: 1%;
+            margin-top: 0.9%;
+            z-index: 7;">
+        </img>
+
+        <table width="820px" height="96px" style="
+            background-image: url('assets/satisfactionValoration.png');
+            background-size: cover;
+            position: relative;
+            z-index: 8;">
+
+            <tr>
+                <td>
+                    <img src="assets/loaders/satisfaccion.gif" height="80px"
+                        style="padding-top:4px; margin-right: -8px">
+                </td>
+                <td style="font-size:18px; color:#000; font-family: Lexend; font-weight: 500;">
+                    ¿Qué te ha parecido esta página?
+                </td>
+                <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='6%'"
+                    onclick="getElementById('starFill').style.marginLeft='6%'"></td>
+                <td width="4px"></td>
+                <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='12%'"
+                    onclick="getElementById('starFill').style.marginLeft='12%'"></td>
+                <td width="4px"></td>
+                <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='17%'"
+                    onclick="getElementById('starFill').style.marginLeft='17%'"></td>
+                <td width="4px"></td>
+                <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='22%'"
+                    onclick="getElementById('starFill').style.marginLeft='22%'"></td>
+                <td width="4px"></td>
+                <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='27%'"
+                    onclick="getElementById('starFill').style.marginLeft='27%'"></td>
+                <td width="10px"></td>
+            </tr>
+
+        </table>
+
     </div>
 
     <br><br><br><br><br><br><br>
@@ -371,7 +398,7 @@
 
     <!-- Envíos y ayuda -->
     <br><br><br>
-    <table cellspacing="-5px" style="
+    <table cellspacing=" -5px" style="
     width: 90%;
     min-height: 200px;
     border-radius: 18px;
