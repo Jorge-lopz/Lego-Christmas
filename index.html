@@ -182,8 +182,10 @@
 
 <!--BODY-->
 
-<body style="overflow-x:hidden; user-select: none;" onscroll="if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block' };
-    document.getElementById('lucesHeader').style.marginTop=(65-window.scrollY*0.092)+'px'">
+<body style="overflow-x:hidden; user-select: none;" onscroll="
+    if (scrollY>0) {document.getElementById('footerButton').style.display='inline-block'};
+    document.getElementById('lucesHeader').style.marginTop=(65-window.scrollY*0.092)+'px'; 
+    document.getElementById('gifScroll').style.marginTop=(560-window.scrollY*0.2)+'px'">
 
     <!--Background-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
@@ -193,8 +195,8 @@
     <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
         style="position:fixed; margin-top: 65px; margin-left: -1%; z-index:-990; " width="101%">
 
-    <img src="assets/bajar.gif" width="4.5%"
-        style="position:fixed; margin-top: 38%; margin-left: 47.5%; z-index:-990; filter: drop-shadow(#00000099 0 0 5px);">
+    <img src="assets/bajar.gif" id="gifScroll" width="4.5%"
+        style="position:fixed; margin-top: 560px; margin-left: 47.5%; z-index:-990; filter: drop-shadow(#00000099 0 0 5px);">
 
     <!--CONTENT-->
 
@@ -231,7 +233,7 @@
     <img width="102%" src="assets/bannerRegalos.jpg" style="
     z-index: 2; 
     margin-left: -0.7%;
-    margin-top:45.2%;
+    margin-top:48.5%;
     position: relative;">
     <table style="margin-top: -25%; margin-left:50px; position: absolute; z-index:3; padding-left: 5%; ">
         <tr>
@@ -340,6 +342,9 @@
     margin-left: -0.7%;
     position: relative;">
 
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
     <!--Satisfacción cliente-->
 
     <div style="margin-left: 23%;">
@@ -358,7 +363,7 @@
             z-index: 7;">
         </img>
 
-        <table width="820px" height="96px" style="
+        <table width="820px" height="96px" onmouseout="getElementById('starFillLight').style.marginLeft='1%'" style="
             background-image: url('assets/satisfactionValoration.png');
             background-size: cover;
             position: relative;
@@ -393,9 +398,6 @@
 
     </div>
 
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-
     <!-- Envíos y ayuda -->
     <br><br><br>
     <table cellspacing=" -5px" style="
@@ -416,28 +418,28 @@
 
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icons/icono_tiendas.png" alt="Ubicacion"
+                    <img src="assets/icons/icono_tiendas.png" id="IMGUbicacion" alt="Ubicacion"
                         onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('ubicacion').style.color='#ffffffff'"
                         onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('ubicacion').style.color='#ffffffaa'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icons/icono_recogida.png" alt="envios"
+                    <img src="assets/icons/icono_recogida.png" id="IMGEnvios" alt="envios"
                         onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('envios').style.color='#ffffffff'"
                         onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('envios').style.color='#ffffffaa'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icons/icono_envios.png" alt="recogida"
+                    <img src="assets/icons/icono_envios.png" id="IMGRecogida" alt="recogida"
                         onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('recogida').style.color='#ffffffff'"
                         onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('recogida').style.color='#ffffffaa'">
                 </a>
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img src="assets/icons/icono_ayuda.png" alt="ayuda"
+                    <img src="assets/icons/icono_ayuda.png" id="IMGAyuda" alt="ayuda"
                         onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('ayuda').style.color='#ffffffff'"
                         onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('ayuda').style.color='#ffffffaa'">
                 </a>
@@ -450,12 +452,14 @@
 
         <tr style="font-family: Roboto; font-size:18px; color: #ffffffaa;">
 
-            <td style="
+            <td id="ubicacion" style="
                 margin-top: -100px;
                 font-weight: 400;">
 
-                <span id="ubicacion" onmouseover="this.style.fontWeight='600';"
-                    onmouseleave="this.style.fontWeight='400';" style="margin-top: -50px;">Ubicación
+                <span
+                    onmouseover="getElementById('IMGUbicacion').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
+                    onmouseout="getElementById('IMGUbicacion').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
+                    style="margin-top: -50px;">Ubicación
                 </span>
 
             </td>
@@ -463,7 +467,9 @@
                 margin-top: -100px;
                 font-weight: 400;">
 
-                <span onmouseover="this.style.color='#022968';" onmouseleave="this.style.color='white'"
+                <span
+                    onmouseover="getElementById('IMGEnvios').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
+                    onmouseout="getElementById('IMGEnvios').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
                     style="margin-top: -30px;">Envíos
                 </span>
 
@@ -473,7 +479,9 @@
                 margin-top: -100px;
                 font-weight: 400;">
 
-                <span onmouseover="this.style.color='#022968';" onmouseleave="this.style.color='white'"
+                <span
+                    onmouseover="getElementById('IMGRecogida').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
+                    onmouseout="getElementById('IMGRecogida').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
                     style="margin-top: -30px;">Recogida
                 </span>
 
@@ -482,7 +490,9 @@
                 margin-top: -100px;
                 font-weight: 400;">
 
-                <span onmouseover="this.style.color='#022968';" onmouseleave="this.style.color='white'"
+                <span
+                    onmouseover="getElementById('IMGAyuda').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
+                    onmouseout="getElementById('IMGAyuda').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
                     style="margin-top: -30px;">Ayuda
                 </span>
 
