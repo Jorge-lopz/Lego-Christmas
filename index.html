@@ -225,17 +225,18 @@
     </table>
 
     <!--White Background for the rest of the page-->
-    <img src="assets/whiteBackground.png"
+    <img draggable="false" src="assets/whiteBackground.png"
         style="position: absolute;  width: 102%; margin-top: 41%; margin-left: -1%; z-index:1;">
 
     <!--¿Tienes ya tu regalo?-->
 
-    <img width="102%" src="assets/bannerRegalos.jpg" style="
+    <img draggable="false" width="102%" src="assets/bannerRegalos.jpg" style="
     z-index: 2; 
     margin-left: -0.7%;
     margin-top:48.5%;
     position: relative;">
-    <table style="margin-top: -25%; margin-left:50px; position: absolute; z-index:3; padding-left: 5%; ">
+    <table
+        style="margin-top: -25%; user-select:text; margin-left:50px; position: absolute; z-index:3; padding-left: 5%; ">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
@@ -277,13 +278,13 @@
         font-weight: 500;">
 
         <tr>
-            <td style="width: 30%;">Casa Chewaca</td>
+            <td style="width: 30%; user-select:text;">Casa Chewaca</td>
 
-            <td style="width: 30%;">Trineo Santa Claus</td>
+            <td style="width: 30%; user-select:text;">Trineo Santa Claus</td>
 
-            <td style="width: 30%;">La casa nevada</td>
+            <td style="width: 30%; user-select:text;">La casa nevada</td>
 
-            <td style="width: 30%;">El cascanueces</td>
+            <td style="width: 30%; user-select:text;">El cascanueces</td>
 
         </tr>
 
@@ -296,7 +297,7 @@
                 document.getElementById('juguete3').style.opacity='1';
                 document.getElementById('juguete4').style.opacity='1';
             ">
-                <img src="assets/casaChewaca.png" alt="" style="height: 200px;">
+                <img draggable="false" src="assets/casaChewaca.png" alt="" style="height: 200px;">
             </td>
 
             <td id="juguete2" style="
@@ -307,7 +308,7 @@
                 document.getElementById('juguete3').style.opacity='1';
                 document.getElementById('juguete4').style.opacity='1';
             ">
-                <img src="assets/trineoSanta.png" alt="" style="height: 200px;">
+                <img draggable="false" src="assets/trineoSanta.png" alt="" style="height: 200px;">
             </td>
 
             <td id="juguete3" style="
@@ -318,7 +319,7 @@
                 document.getElementById('juguete2').style.opacity='1';
                 document.getElementById('juguete4').style.opacity='1';
             ">
-                <img src="assets/casaNieve.png" alt="" style="height: 200px;">
+                <img draggable="false" src="assets/casaNieve.png" alt="" style="height: 200px;">
             </td>
 
             <td id="juguete4" style="
@@ -327,7 +328,7 @@
                 onmouseover="document.getElementById('juguete1').style.opacity='0.5'; document.getElementById('juguete2').style.opacity='0.5'; document.getElementById('juguete3').style.opacity='0.5'"
                 onmouseleave="document.getElementById('juguete1').style.opacity='1'; document.getElementById('juguete2').style.opacity='1'; document.getElementById('juguete3').style.opacity='1';
             ">
-                <img src="assets/cascanueces.png" alt="" style="height: 200px;">
+                <img draggable="false" src="assets/cascanueces.png" alt="" style="height: 200px;">
             </td>
 
 
@@ -337,7 +338,7 @@
         </tr>
     </table>
 
-    <img width="102%" src="assets/changeColorBanner.jpg" style="
+    <img draggable="false" width="102%" src="assets/changeColorBanner.jpg" style="
     z-index: 2; 
     margin-left: -0.7%;
     position: relative;">
@@ -371,9 +372,10 @@
 
             <tr>
                 <td>
-                    <img src="assets/satisfactionFace.gif" height="80px" style="padding-top:4px; margin-right: -8px">
+                    <img draggable="false" src="assets/satisfactionFace.gif" height="80px"
+                        style="padding-top:4px; margin-right: -8px">
                 </td>
-                <td style="font-size:18px; color:#000; font-family: Lexend; font-weight: 500;">
+                <td style="user-select:text; font-size:18px; color:#000; font-family: Lexend; font-weight: 500;">
                     ¿Qué te ha parecido esta página?
                 </td>
                 <td width="65px" onmouseover="getElementById('starFillLight').style.marginLeft='6%'"
@@ -458,7 +460,7 @@
                 <span
                     onmouseover="getElementById('IMGUbicacion').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
                     onmouseout="getElementById('IMGUbicacion').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
-                    style="margin-top: -50px;">Ubicación
+                    style="margin-top: -50px; user-select:text;">Ubicación
                 </span>
 
             </td>
@@ -469,7 +471,7 @@
                 <span
                     onmouseover="getElementById('IMGEnvios').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
                     onmouseout="getElementById('IMGEnvios').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
-                    style="margin-top: -30px;">Envíos
+                    style="margin-top: -30px; user-select:text;">Envíos
                 </span>
 
             </td>
@@ -481,7 +483,7 @@
                 <span
                     onmouseover="getElementById('IMGRecogida').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
                     onmouseout="getElementById('IMGRecogida').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
-                    style="margin-top: -30px;">Recogida
+                    style="margin-top: -30px; user-select:text;">Recogida
                 </span>
 
             </td>
@@ -492,7 +494,7 @@
                 <span
                     onmouseover="getElementById('IMGAyuda').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
                     onmouseout="getElementById('IMGAyuda').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
-                    style="margin-top: -30px;">Ayuda
+                    style="margin-top: -30px; user-select:text;">Ayuda
                 </span>
 
             </td>
