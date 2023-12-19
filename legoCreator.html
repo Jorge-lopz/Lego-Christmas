@@ -4,27 +4,26 @@
 
 <!--https://www.briquestore.fr/en/search?controller=search&s=santa-->
 
-<body>
+<body style="background-color: rgb(0, 166, 255);">
 
   <table>
 
+    <!--Selector de partes-->
     <table border="0" cellpadding="0" draggable="false" style="
     user-select: none;
     height: 350px;
     width: 110%;
-    margin-left: -8px;
     float: left ;
     z-index: 999;
     position: absolute;
-    margin-left: 7%;">
+    margin-left: 15%;">
 
       <br><br><br><br><br>
 
-      <!--Selector de partes-->
-
+      <!-- Gorro -->
       <tr>
 
-        <!-- Gorro -->
+
         <td style="height: 10px;">
 
           <img id="selectorGorro1" src="assets/legoCreator/peloBasico.png" alt="Pelo Basico" draggable="false" style="
@@ -32,7 +31,7 @@
             padding: 0;
             margin: 0;
             width: 80px;
-            background-color: rgb(0,0,0,0.1);
+            background: radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
@@ -40,10 +39,10 @@
             document.getElementById('gorro2').innerHTML = 
             '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; 
             document.getElementById('gorro1').style.marginTop='-22.8%';
-            document.getElementById('selectorGorro2').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorGorro3').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorGorro4').style.backgroundColor='rgb(0,0,0,0)';
-            this.style.backgroundColor='rgb(0,0,0,0.1)'
+            document.getElementById('selectorGorro2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorGorro3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorGorro4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'
             ">
 
           <img id="selectorGorro2" src="assets/legoCreator/barbaGorroSanta.png" alt="" draggable="false" style="
@@ -51,6 +50,7 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
@@ -58,10 +58,10 @@
             document.getElementById('gorro2').innerHTML = 
             '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>';
             document.getElementById('gorro1').style.marginTop='-22.6%';
-            document.getElementById('selectorGorro1').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorGorro3').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorGorro4').style.backgroundColor='rgb(0,0,0,0)';
-           this.style.backgroundColor='rgb(0,0,0,0.1)'
+            document.getElementById('selectorGorro1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorGorro3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorGorro4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'
             ">
 
           <img id="selectorGorro3" src="assets/legoCreator/orejasGorroElfoIcono.png" alt="" draggable="false" style="
@@ -69,6 +69,7 @@
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
@@ -76,10 +77,10 @@
           document.getElementById('gorro2').innerHTML = 
           '<img src=\'assets/legoCreator/orejasElfo.png\' style=\'width: 170px;\'>'; 
           document.getElementById('gorro1').style.marginTop='-22.8%';
-          document.getElementById('selectorGorro1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorGorro2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorGorro4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'
+          document.getElementById('selectorGorro1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorGorro2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorGorro4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'
           ">
 
           <img id="selectorGorro4" src="assets/legoCreator/gorroRenoIcono.png" alt="" draggable="false" style="
@@ -87,6 +88,7 @@
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('gorro1').innerHTML = 
@@ -94,79 +96,84 @@
           document.getElementById('gorro2').innerHTML = 
           '<img src=\'assets/legoCreator/blank.png\' style=\'width: 170px;\'>'; 
           document.getElementById('gorro1').style.marginTop='-25.5%';
-          document.getElementById('selectorGorro1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorGorro2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorGorro3').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'
+          document.getElementById('selectorGorro1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorGorro2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorGorro3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'
           ">
         </td>
       </tr>
 
+      <!-- Cabeza -->
       <tr>
-        <!-- Cabeza -->
+
         <td style="height: 10px;">
           <img id='selectorCabeza1' src="assets/legoCreator/caraBasica.png" alt="Cara Basica" draggable="false" style="
           user-select: none;
           padding: 0;
           margin: 0;
           width: 80px;
-          background-color: rgb(0,0,0,0.1);
+          background: radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
           '<img src=\'assets/legoCreator/caraBasica.png\' style=\'width: 170px;\'>'; 
-          document.getElementById('selectorCabeza2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza3').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)' ">
+          document.getElementById('selectorCabeza2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))' ">
 
           <img id='selectorCabeza2' src="assets/legoCreator/caraSanta.png" alt="" draggable="false" style="
           user-select: none;
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
           '<img src=\'assets/legoCreator/caraSanta.png\' style=\'width: 170px;\'>'; 
-          document.getElementById('selectorCabeza1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza3').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCabeza1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorCabeza3' src="assets/legoCreator/caraElfo.png" alt="Cara Elfo" draggable="false" style="
           user-select: none;
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
           '<img src=\'assets/legoCreator/caraElfo.png\' style=\'width: 170px;\'>';
-          document.getElementById('selectorCabeza1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCabeza1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorCabeza4' src="assets/legoCreator/caraReno.png" alt="Cara Reno" draggable="false" style="
           user-select: none;
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cabeza').innerHTML = 
           '<img src=\'assets/legoCreator/caraReno.png\' style=\'width: 170px;\'>';
-          document.getElementById('selectorCabeza1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCabeza3').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCabeza1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCabeza3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
         </td>
       </tr>
 
+      <!-- Camiseta  -->
       <tr>
-        <!-- Camiseta  -->
+
         <td style="height: 10px;">
           <img id='selectorCamiseta1' src="assets/legoCreator/camisetaBasica.png" alt="Camiseta Roja" draggable="false"
             style="
@@ -175,15 +182,15 @@
           margin: 0;
           width: 80px;
           border-radius: 5px;
-          background-color: rgb(0,0,0,0.1);
+          background: radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65));
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaBasica.png\' style=\'width: 170px;\'>';
           document.getElementById('manos').style.display='block';
-          document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCamiseta2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorCamiseta2' src="assets/legoCreator/camisetaSanta.png" alt="Camiseta Santa" draggable="false"
             style="
@@ -191,15 +198,16 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaSanta.png\' style=\'width: 170px;\'>';
           document.getElementById('manos').style.display='block';
-          document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCamiseta1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
 
           <img id='selectorCamiseta3' src="assets/legoCreator/camisetaElfo.png" alt="Camiseta Elfo" draggable="false"
@@ -208,15 +216,16 @@
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaElfo.png\' style=\'width: 170px;\'>';
           document.getElementById('manos').style.display='block';
-          document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCamiseta1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorCamiseta4' src="assets/legoCreator/camisetaReno.png" alt="Camiseta Reno" draggable="false"
             style="
@@ -224,21 +233,24 @@
           padding: 0;
           margin: 0;
           width: 80px;
+          background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
           border-radius: 5px;
           border: black;
           border: solid;" onclick="document.getElementById('cuerpo').innerHTML = 
           '<img src=\'assets/legoCreator/camisetaReno.png\' style=\'width: 170px;\'>';
           document.getElementById('manos').style.display='none';
-          document.getElementById('selectorCamiseta1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorCamiseta3').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorCamiseta1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorCamiseta3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
         </td>
 
       </tr>
+
+      <!-- Pantalones -->
       <tr>
-        <!-- Pantalones -->
+
         <td style="height: 10px;">
           <img id='selectorPantalones1' src="assets/legoCreator/pantalonesMarrones.png" alt="Pantalones Grises"
             draggable="false" style="
@@ -247,14 +259,14 @@
             margin: 0;
             width: 80px;
             border-radius: 5px;
-            background-color: rgb(0,0,0,0.1);
+            background: radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65));
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
           '<img src=\'assets/legoCreator/pantalonesMarrones.png\' style=\'width: 170px;\'>'; 
-          document.getElementById('selectorPantalones2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorPantalones3').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorPantalones4').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorPantalones2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorPantalones3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorPantalones4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorPantalones2' src="assets/legoCreator/pantalonesSanta.png" alt="Pantalones Santa"
             draggable="false" style="
@@ -262,14 +274,15 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
             '<img src=\'assets/legoCreator/pantalonesSanta.png\' style=\'width: 170px;\'>'; 
-            document.getElementById('selectorPantalones1').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorPantalones3').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorPantalones4').style.backgroundColor='rgb(0,0,0,0)';
-            this.style.backgroundColor='rgb(0,0,0,0.1)'">
+            document.getElementById('selectorPantalones1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorPantalones3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorPantalones4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorPantalones3' src="assets/legoCreator/pantalonesElfo.png" alt="Pantalones Elfo"
             draggable="false" style="
@@ -277,14 +290,15 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
             '<img src=\'assets/legoCreator/pantalonesElfo.png\' style=\'width: 170px;\'>';
-            document.getElementById('selectorPantalones1').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorPantalones2').style.backgroundColor='rgb(0,0,0,0)';
-            document.getElementById('selectorPantalones4').style.backgroundColor='rgb(0,0,0,0)';
-           this.style.backgroundColor='rgb(0,0,0,0.1)'">
+            document.getElementById('selectorPantalones1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorPantalones2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+            document.getElementById('selectorPantalones4').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+           this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
           <img id='selectorPantalones4' src="assets/legoCreator/pantalonesReno.png" alt="Pantalones Reno"
             draggable="false" style="
@@ -292,20 +306,22 @@
             padding: 0;
             margin: 0;
             width: 80px;
+            background: radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72));
             border-radius: 5px;
             border: black;
             border: solid;" onclick="document.getElementById('piernas').innerHTML = 
           '<img src=\'assets/legoCreator/pantalonesReno.png\' style=\'width: 170px;\'>'; 
-          document.getElementById('selectorPantalones1').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorPantalones2').style.backgroundColor='rgb(0,0,0,0)';
-          document.getElementById('selectorPantalones3').style.backgroundColor='rgb(0,0,0,0)';
-          this.style.backgroundColor='rgb(0,0,0,0.1)'">
+          document.getElementById('selectorPantalones1').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorPantalones2').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          document.getElementById('selectorPantalones3').style.background='radial-gradient(circle, rgb(255,255,255,0.95), rgb(255,255,255,0.72))';
+          this.style.background='radial-gradient(circle, rgb(255,255,255,0.45), rgb(255,255,255,0.65))'">
 
       </tr>
+
     </table>
 
     <!-- Muñeco de ejemplo -->
-    <table style="padding-top: 25%; user-select: none;" draggable="false">
+    <table border="0" style="padding-top: 25%; user-select: none;" draggable="false">
       <tr>
 
         <!-- Gorro  -->
@@ -316,8 +332,7 @@
         padding-left: 60%;
         margin-top: -22.5%;
         position: absolute;
-        z-index: 900;
-        ">
+        z-index: 900;">
           <img src="assets/legoCreator/peloBasico.png" draggable="false" style="width: 170px;">
         </td>
 
@@ -327,8 +342,7 @@
         padding-left: 60%;
         margin-top: -349px;
         position: absolute;
-        z-index: 896;
-        ">
+        z-index: 896;">
           <img src="assets/legoCreator/blank.png" draggable="false" style="width: 170px;">
         </td>
 
@@ -338,8 +352,7 @@
         padding-left: 60%;
         margin-top: -22.8%;
         position: absolute;
-        z-index: 898;
-        ">
+        z-index: 898;">
           <img src="assets/legoCreator/caraBasica.png" draggable="false" style="width: 170px;">
         </td>
 
@@ -349,8 +362,7 @@
         padding-left: 60%;
         margin-top: -18.5%;
         position: absolute;
-        z-index: 899;
-        ">
+        z-index: 899;">
           <img src="assets/legoCreator/camisetaBasica.png" draggable="false" style="width: 170px;">
         </td>
 
@@ -360,8 +372,7 @@
         padding-left: 60%;
         margin-top: -14%;
         position: absolute;
-        z-index: 897;
-        ">
+        z-index: 897;">
           <img src="assets/legoCreator/pantalonesMarrones.png" draggable="false" style="width: 170px;">
         </td>
 
@@ -371,8 +382,7 @@
         padding-left: 60%;
         margin-top: -18.5%;
         position: absolute;
-        z-index: 900;
-        ">
+        z-index: 900;">
           <img src="assets/legoCreator/manosBasicas.png" draggable="false" style="width: 170px;">
         </td>
 
