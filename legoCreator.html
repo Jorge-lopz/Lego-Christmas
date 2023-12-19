@@ -169,7 +169,7 @@
   <tr>
     <td width="4px"></td>
     <td style="filter:drop-shadow(#00000070 0 0 4px);"
-      onclick="if (getElementById('backgroundAudio').volume>0.15) {getElementById('backgroundAudio').volume-=0.1}">
+      onclick="document.getElementById('backgroundAudio').volume=Math.max(0.05,document.getElementById('backgroundAudio').volume-=0.1)">
       🔉</td>
 
     <td width="12px"></td>

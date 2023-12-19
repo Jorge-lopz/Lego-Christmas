@@ -170,7 +170,7 @@
     <tr>
         <td width="4px"></td>
         <td style="filter:drop-shadow(#00000070 0 0 4px);"
-            onclick="if (getElementById('backgroundAudio').volume>0.15) {getElementById('backgroundAudio').volume-=0.1}">
+            onclick="document.getElementById('backgroundAudio').volume=Math.max(0.05,document.getElementById('backgroundAudio').volume-=0.1)">
             🔉</td>
 
         <td width="12px"></td>
@@ -194,8 +194,101 @@
 
 <!--BODY-->
 
-<body style="overflow-x: hiden;">
+<body style="overflow-x: hidden;" onscroll="
+    document.getElementById('colaboradoresTabla').style.marginTop=(Math.min(50,scrollY*0.2)+'px');
+    document.getElementById('colaboradoresBlur').style.marginTop=(Math.min(50,scrollY*0.2)+'px')">
 
+    <table style="margin-top: 3%; 
+        width: 101%; 
+        min-height: 300px; 
+        margin-left: -1%; 
+        position: absolute; 
+        z-index:99; 
+        padding-left: 5%; 
+        padding-top: 2%; 
+        padding-right: 3%; 
+        background: linear-gradient(#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff00);">
 
+        <tr style="text-align:center">
+            <td colspan="6"
+                style="color:rgb(0, 0, 0); font-family: Lexend; font-size:50px; font-weight: 600; text-shadow: #00000010 0 0 10px;">
+                &nbsp;COLABORADORES</td>
+        </tr>
+    </table>
+
+    <table id="colaboradoresBlur" style="display:none; min-width: 68%; 
+        z-index:3; 
+        position: fixed; 
+        user-select:none; 
+        padding-left: 3%; 
+        margin-left: 15.72%;
+        padding-top: 1.7%;
+        padding-right: 3%;">
+
+        <tr style="height: 75px;
+            backdrop-filter: blur(5px);
+            background-color: #00000060;
+            border-radius: 7px;">
+            <td style="border: solid #000 3px; border-radius: 7px;"></td>
+        </tr>
+
+    </table>
+
+    <table id="colaboradoresTabla" style="display:none; width: 70%; 
+        user-select:none; 
+        position: fixed; 
+        z-index:3; 
+        margin-left: 14.72%;
+        padding-left: 3%; 
+        padding-right: 3%;">
+
+        <tr style="height: 130px;
+            text-align: center;
+            filter: drop-shadow(#00000070 2px 2px 5px);
+            border-radius: 7px;">
+
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/marvelLogo.png" width="135px"
+                        onmouseover="this.style.width='150px'" onmouseout="this.style.width='135px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/disneyLogo.png" width="135px"
+                        onmouseover="this.style.width='150px'" onmouseout="this.style.width='135px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/fortniteLogo.png" width="135px"
+                        onmouseover="this.style.width='150px'" onmouseout="this.style.width='135px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/harryPotterLogo.png" width="135px"
+                        onmouseover="this.style.width='150px'" onmouseout="this.style.width='135px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/minecraftLogo.png" width="135px"
+                        onmouseover="this.style.width='150px'" onmouseout="this.style.width='135px'"
+                        style="padding:5px"></a>
+            </td>
+        </tr>
+    </table>
+
+    <img src="paginaDescubrir/assets/cutBigBannerFornite.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
+        margin-top: 22.5%; 
+        opacity: 1;
+        z-index:2;
+        position: absolute;" onmouseover=" this.style.opacity=0" onmouseout="this.style.opacity = 1">
+
+    <img src="paginaDescubrir/assets/cutSmallBannerFornite.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
+        margin-top: 22.5%; 
+        z-index:1;
+        position: absolute"
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
