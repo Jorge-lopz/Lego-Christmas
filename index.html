@@ -242,9 +242,8 @@
     document.getElementById('gifScroll').style.marginTop=(560-window.scrollY*0.2)+'px'">
 
     <!--Music-->
-    <audio onplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
+    <audio oncanplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
         src="assets/music.mp3" type="audio/mpeg"></audio>
-
 
     <!--Background, Header Lights & Scroll Gif-->
     <video style="background-size: contain; left:0; margin-left: -1%; z-index: -999; position: fixed" width=102%
@@ -292,7 +291,7 @@
     <img draggable="false" width="102.5%" src="assets/bannerRegalos.jpg" style="
     z-index: 2; 
     margin-top:48.5%;
-    margin-left: -2%;
+    margin-left: -0.6%;
     position: relative;">
 
     <table
@@ -324,7 +323,7 @@
     <table id="juguetes" cellpadding="20px" style="
         padding-left: 4%;
         margin-top: -4px;
-        margin-left: -2%;
+        margin-left: -0.6%;
         width: 102.5%;
         background-color: #008381;
         padding-top: 2%;
@@ -400,21 +399,50 @@
     <!--Change Color Banner-->
     <img draggable="false" width="102.5%" src="assets/changeColorBanner.jpg" style="
     z-index: 2; 
-    margin-left: -2%;
+    margin-left: -0.6%;
     position: relative;">
 
-    <!-- ... -->
-    <img draggable="false" width="102.5%" src="assets/bannerMoto.jpg" style="
+    <!--A la tienda-->
+    <img draggable="false" width="102.5%" src="assets/bannerMoto.png" style="
         z-index: 2; 
         margin-top:-0.3%;
-        margin-left: -2%;
-        position: relative;">
+        margin-left: -0.6%;
+        position: relative;"></img>
+    <a href="tienda.html"
+        onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho-light.png'"
+        onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho.png'"
+        style="margin-top: -28%; 
+        margin-left: 71%; 
+        position:absolute; 
+        padding-bottom: 7px;
+        padding-top: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        color:#000;
+        font-size: 20px;
+        font-family: Mada;
+        font-weight: 400;
+        z-index: 5; 
+        background-color: #fff; 
+        border-radius: 5px;">
+
+        <table>
+            <tr>
+                <td> &nbsp;A la tienda</td>
+                <td>
+                    <img id="tiendaArrow" src="assets/icons/angulo-derecho.png" style="margin-top: 4px;" height="28">
+                    </img>
+                </td>
+            </tr>
+        </table>
+    </a>
     <table
-        style="margin-top: -27%; user-select:text; margin-left:54%; position: absolute; z-index:3; padding-left: 5%; ">
+        style="margin-top: -22.3%; user-select:text; margin-left:50.5%; position: absolute; z-index:3; padding-left: 5%; ">
         <tr>
             <td
                 style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
-                ¿Tienes ya tu regalo?</td>
+                ¡No te quedes sin tu regalo!</td>
         </tr>
         <tr>
             <td style="height: 5px;"></td>
@@ -424,12 +452,11 @@
             color:white;
             font-family: Mada;
             font-size:25px;
+            text-align: center;
             font-weight: 400;
+            text-wrap: pretty;
             text-shadow: #00000090 0 0 10px;">
-                En <b>LEGO®</b> os ayudamos a llenar de ilusión <br> la cena navideña con nuestros increibles sets.
-                <br><br>
-                <a style="font-size:23px; font-weight: 600;">¡No dejes que tus ideas brillantes se desarmen antes de
-                    tiempo!
+                Haz tu pedido antes del 21/12 para recibirlo<br> a tiempo para Navidad con envío urgente.
             </td>
         </tr>
     </table>
@@ -438,14 +465,14 @@
     <img draggable="false" width="102.5%" src="assets/bannerAzul.png" style="
     z-index: 2; 
     margin-top:-0.3%;
-    margin-left: -2%;
+    margin-left: -0.6%;
     position: relative;">
 
     <!--Satisfacción cliente-->
     <div style="margin-left: 23%; margin-top: -14%">
         <img src="assets/satisfactionYellow.png" id="starFillLight" width="390px" heigth="90px" style="
                 position: absolute;
-                filter: opacity(0.6);
+                filter: opacity(0.7);
                 margin-left: 1%;
                 margin-top: 0.9%;
                 z-index: 6;">
@@ -494,10 +521,17 @@
 
     </div>
 
+    <!--Trineo con Renos-->
+    <img draggable="false" width="20%" src="assets/trineoConRenos.png" style="
+    z-index: 6; 
+    margin-top:-5%;
+    margin-left: 79%;
+    position: absolute;">
+
     <!--Change Color Banner-->
     <img draggable="false" width="102.5%" src="assets/changeColorBannerInvertido.jpg" style="
         z-index: 2; 
-        margin-left: -2%;
+        margin-left: -0.6%;
         position: relative;
         margin-top: 7%">
 
@@ -505,24 +539,129 @@
     <img draggable="false" width="102.5%" height="500px" src="assets/bannerRojo.png" style="
     z-index: 2; 
     margin-top:-0.3%;
-    margin-left: -2%;
+    margin-left: -0.6%;
     position: relative;">
 
-    <!--Envíos y ayuda-->
-    <table cellspacing=" -5px" style="
-    width: 90%;
-    min-height: 200px;
-    border-radius: 18px;
-    background-color: #008381;
-    margin-left: 5%;
-    z-index: 5;
-    position: relative;
-    padding-left: 0px;
-    text-align: center;
-    padding-top: 2%;">
+    <!--Colaboradores-->
+    <table
+        style="margin-top: -30%; min-width: 99%; max-width: 99%; user-select:text; position: absolute; z-index:3; padding-left: 3%; padding-right: 3%;">
+        <tr style="text-align:center">
+            <td colspan="6"
+                style="color:white; font-family: Mada; font-size:50px; font-weight: 600; text-shadow: #00000090 0 0 10px;">
+                &nbsp;Colaboradores</td>
+        </tr>
         <tr>
-            <td rowspan="2" style="width: 150px; padding-left: 5%;">
-                <img draggable="false" src="assets/trineo.png" style="height: 150px;" alt="">
+            <td colspan="6" style="height: 15px;"></td>
+        </tr>
+        <tr style="margin-top: 40px; 
+        color:white;
+        font-family: Mada;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        text-shadow: #00000090 0 0 10px;">
+            <td style="height: 130px"></td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/marvelLogo.png" width="200px"
+                        onmouseover="this.style.width='205px'" onmouseout="this.style.width='200px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/disneyLogo.png" width="200px"
+                        onmouseover="this.style.width='205px'" onmouseout="this.style.width='200px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/fortniteLogo.png" width="200px"
+                        onmouseover="this.style.width='205px'" onmouseout="this.style.width='200px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/harryPotterLogo.png" width="200px"
+                        onmouseover="this.style.width='205px'" onmouseout="this.style.width='200px'"
+                        style="padding:5px"></a>
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                <a href="descubrir.html"><img draggable=false src="assets/minecraftLogo.png" width="200px"
+                        onmouseover="this.style.width='205px'" onmouseout="this.style.width='200px'"
+                        style="padding:5px"></a>
+            </td>
+        </tr>
+        <tr style="margin-top: 40px; 
+        color:white;
+        font-family: Mada;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 500;
+        text-shadow: #00000090 0 0 10px;">
+            <td></td>
+            <td style="min-width: 20px; max-width: 20px;">
+                Marvel
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                Disney
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                Fortnite
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                Harry Potter
+            </td>
+            <td style="min-width: 20px; max-width: 20px;">
+                Minecraft
+            </td>
+        </tr>
+    </table>
+    <a href="descubrir.html"
+        onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff'; getElementById('descubrirArrow').src='assets/icons/angulo-derecho-light.png'"
+        onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'; getElementById('descubrirArrow').src='assets/icons/angulo-derecho.png'"
+        style="margin-top: -10%; 
+        margin-left: 44.5%; 
+        position:absolute; 
+        padding-bottom: 7px;
+        padding-top: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        color:#000;
+        font-size: 20px;
+        font-family: Mada;
+        font-weight: 400;
+        z-index: 5; 
+        background-color: #fff; 
+        border-radius: 5px;">
+
+        <table>
+            <tr>
+                <td> &nbsp;Descubrir más</td>
+                <td>
+                    <img id="descubrirArrow" src="assets/icons/angulo-derecho.png" style="margin-top: 4px;" height="28">
+                    </img>
+                </td>
+            </tr>
+        </table>
+    </a>
+
+    <!--Envíos y contacto-->
+    <table cellspacing="-5px" style="
+        width: 90%;
+        border: solid #000 3px;
+        min-height: 200px;
+        border-radius: 18px;
+        background-color: #008381;
+        margin-left: 7%;
+        margin-top: -0.5%;
+        z-index: 5;
+        box-shadow: #00000060 0px 0px 8px;
+        position: relative;
+        text-align: center;
+        padding-bottom: 2%;
+        padding-top: 2%;">
+        <tr>
+            <td rowspan="2" style="width: 100px;">
+                <img draggable="false" src="assets/trineo.png" style="height: 150px;">
             </td>
 
             <td style="width: 130px; height: 100px;">
@@ -548,13 +687,13 @@
             </td>
             <td style="width: 130px; height: 100px;">
                 <a href="enConstruccion.html">
-                    <img draggable="false" src="assets/icons/icono_ayuda.png" id="IMGAyuda" alt="ayuda"
-                        onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('ayuda').style.color='#ffffffff'"
-                        onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('ayuda').style.color='#ffffffaa'">
+                    <img draggable="false" src="assets/icons/icono_contacto.png" id="IMGContacto" alt="contacto"
+                        onmouseover="this.style.filter='drop-shadow(#00000080 3px 3px 5px)'; getElementById('contacto').style.color='#ffffffff'"
+                        onmouseout="this.style.filter='drop-shadow(#00000000 0 0 0)'; getElementById('contacto').style.color='#ffffffaa'">
                 </a>
             </td>
-            <td rowspan="2" style="width: 50px; padding-right: 5%;">
-                <img draggable="false" src="assets/trineoInvertido.png" style="height: 150px;" alt="">
+            <td rowspan="2" style="width: 100px;">
+                <img draggable="false" src="assets/trineoInvertido.png" style="height: 150px;">
             </td>
 
         </tr>
@@ -595,14 +734,14 @@
                 </span>
 
             </td>
-            <td id="ayuda" style="
+            <td id="contacto" style="
                 margin-top: -100px;
                 font-weight: 400;">
 
                 <span
-                    onmouseover="getElementById('IMGAyuda').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
-                    onmouseout="getElementById('IMGAyuda').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
-                    style="margin-top: -30px; user-select:text;">Ayuda
+                    onmouseover="getElementById('IMGContacto').style.filter='drop-shadow(#00000080 3px 3px 5px)'; this.style.color='#ffffffff'"
+                    onmouseout="getElementById('IMGContacto').style.filter='drop-shadow(#00000000 0 0 0)'; this.style.color='#ffffffaa'"
+                    style="margin-top: -30px; user-select:text;">Contacto
                 </span>
 
             </td>
