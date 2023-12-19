@@ -200,8 +200,7 @@
 
     <table style="margin-top: 3%; 
         width: 101%; 
-        min-height: 300px; 
-        margin-left: -1%; 
+        min-height: 358px; 
         position: absolute; 
         z-index:99; 
         padding-left: 5%; 
@@ -212,7 +211,8 @@
         <tr style="text-align:center">
             <td colspan="6"
                 style="color:rgb(0, 0, 0); font-family: Lexend; font-size:50px; font-weight: 600; text-shadow: #00000010 0 0 10px;">
-                &nbsp;COLABORADORES</td>
+                COLABORADORES
+            </td>
         </tr>
     </table>
 
@@ -275,16 +275,33 @@
         </tr>
     </table>
 
-    <img src="paginaDescubrir/assets/cutBigBannerFornite.png" width="101%" style="margin-left: -1%;
+    <img id="fornite" src="paginaDescubrir/assets/cutSmallBannerFornite.png" width="101%" style="margin-left: -1%;
         clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
-        margin-top: 22.5%; 
+        margin-top: 28.5%; 
+        filter: brightness(0.6);
         opacity: 1;
         z-index:2;
-        position: absolute;" onmouseover=" this.style.opacity=0" onmouseout="this.style.opacity = 1">
+        position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
 
-    <img src="paginaDescubrir/assets/cutSmallBannerFornite.png" width="101%" style="margin-left: -1%;
+    <img src="paginaDescubrir/assets/cutBigBannerFornite.png" width="101%" style="margin-left: -1%;
         clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
-        margin-top: 22.5%; 
+        margin-top: 28.5%; 
+        z-index:1;
+        position: absolute">
+
+    <img id="disney" src="paginaDescubrir/assets/cutSmallBannerDisney.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 0, 100% 11%, 100% 89%, 0 100%);
+        margin-top: 59.2%; 
+        filter: brightness(0.4);
+        opacity: 1;
+        z-index:2;
+        position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.4)'">
+
+    <img src="paginaDescubrir/assets/cutBigBannerDisney.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 0, 100% 11%, 100% 89%, 0 100%);
+        margin-top: 59.2%; 
         z-index:1;
         position: absolute">
 
