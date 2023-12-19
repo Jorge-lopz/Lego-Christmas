@@ -197,12 +197,13 @@
 <body style="overflow-x: hidden;">
 
     <div style="
-    border: solid rgba(128, 128, 128, 0.521) 2px;
+    border: solid rgba(128, 128, 128, 0.4) 1px;
     height: 500px;
+    margin-top: 8%;
     width: 100%;
     margin-left: 0%;">
 
-        <!-- Barra de juguetes -->
+        <!--Barra imáhgenes-->
         <div style="
         overflow-y: scroll;
         width: 12.8%;
@@ -381,12 +382,13 @@
 
         </div>
 
+        <!--Container imagen-->
         <div id="container" border="2" style="
         height: 100%;
         width:60%;
         float:left;
         display: block;
-        border-right: solid rgba(128, 128, 128, 0.521) 2px;
+        border-right: solid rgba(128, 128, 128, 0.4) 1px;
         text-align: center;">
 
             <img src="assets/casaChewaca.png" style="height: 96%; margin-top: 0%; padding: 1.5%" alt="">
@@ -394,19 +396,18 @@
 
         </div>
 
-
-        <!-- Container información-->
+        <!--Container información-->
         <div style="
         float: left;
         width: 22%;
-        padding-left: 1%;
+        padding-left: 3%;
         height: 100%;">
 
             <!-- Nombre juguete -->
             <div style="
             margin-top: 20%;
             font-size: 25px;
-            font-family: Roboto;
+            font-family: Lexend;
             ">
                 <p>Planta piraña</p>
 
@@ -431,20 +432,21 @@
                 <table style="border: solid #959595 0px; border-radius: 20px; background-color: rgb(255, 255, 255);">
                     <tr>
                         <td style="background-color: #96969622; border-radius: 20px"
-                            onmousedown="this.style.backgroundColor='#96969644'"
+                            onmousedown="this.style.backgroundColor='#96969655'"
+                            onmouseover="this.style.backgroundColor='#96969644'"
                             onmouseout="this.style.backgroundColor='#96969622'"
                             onmouseup="this.style.backgroundColor='#96969622'">
                             <button style="padding-top: 4px; 
                             padding-bottom: 4px;
                             padding-left: 16px;
-                            padding-right: 14px;
+                            padding-right: 15px;
                             border: none; 
                             border-radius: 20px;
                             font-size: 27px; 
                             font-weight: 500; 
                             background-color: transparent; 
                             margin-top:-5px;"
-                                onclick="if (getElementById('counter').value>0) {getElementById('counter').value=parseInt(getElementById('counter').value, 10)-1}">
+                                onclick="if (getElementById('counter').value>1) {getElementById('counter').value=parseInt(getElementById('counter').value, 10)-1}">
                                 -
                             </button>
                         </td>
@@ -459,7 +461,8 @@
                             border: none;">
                         </td>
                         <td style="background-color: #96969622; border-radius: 20px;"
-                            onmousedown="this.style.backgroundColor='#96969644'"
+                            onmousedown="this.style.backgroundColor='#96969655'"
+                            onmouseover="this.style.backgroundColor='#96969644'"
                             onmouseout="this.style.backgroundColor='#96969622'"
                             onmouseup=" this.style.backgroundColor='#96969622'">
                             <button style="padding-top: 5px; 
@@ -479,37 +482,35 @@
 
             </div>
 
-
-
             <!-- Botón compra  -->
             <div style="
-        width: 100%;
-        ">
+                width: 100%;
+                padding-top: 5%">
                 <ul style="
-            margin-top: 8%;
-            display: flex; 
-            list-style: none; 
-            padding-left: 0%;">
+                    margin-top: 8%;
+                    display: flex; 
+                    list-style: none; 
+                    padding-left: 0%;">
 
                     <li style="
-                    width: 80%;
-                    background-color: red;
-                    display: flex;
-                    border-radius: 25px;
-                    align-items: center;
-                    justify-content: center;
-                    font-family: Roboto;
-                    font-size: 20px;">
-                        <img src="assets/icons/cestacompra.png" style="height: 30px; ">
+                        width: 80%;
+                        background-color: #e3000b;
+                        display: flex;
+                        border-radius: 25px;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Lexend;
+                        font-size: 22px;">
+                        <img src="assets/icons/cestacompra.png" style="height: 30px; margin-left: -5%;">
                         Comprar
                     </li>
 
                     <li style="
-                    width: 15%;
-                    margin-left: 4%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;">
+                        width: 15%;
+                        margin-left: 4%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;">
                         <img src="assets/icons/corazon.png" alt="corazon" style="
                     height: 35px;
                     background-color: #f4f4f4;
@@ -521,20 +522,9 @@
 
             </div>
 
-
-
-
-
         </div>
 
-
-
-
-
-
-
-
-
+    </div>
 
 </body>
 
