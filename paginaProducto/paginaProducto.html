@@ -450,7 +450,7 @@
                             font-weight: 500; 
                             background-color: transparent; 
                             margin-top:-5px;"
-                                onclick="if (getElementById('counter').value>1) {getElementById('counter').value=parseInt(getElementById('counter').value, 10)-1}">
+                                onclick="getElementById('counter').value=Math.max(1,parseInt(getElementById('counter').value, 10)-1)">
                                 -
                             </button>
                         </td>
@@ -479,7 +479,7 @@
                             font-size: 27px; 
                             font-weight: 500; 
                             background-color: transparent;"
-                                onclick="getElementById('counter').value=parseInt(getElementById('counter').value, 10)+1">
+                                onclick="getElementById('counter').value=Math.min(99,parseInt(getElementById('counter').value, 10)+1)">
                                 +
                             </button>
                         </td>
