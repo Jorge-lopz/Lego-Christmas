@@ -198,6 +198,13 @@
     document.getElementById('colaboradoresTabla').style.marginTop=(Math.min(50,scrollY*0.2)+'px');
     document.getElementById('colaboradoresBlur').style.marginTop=(Math.min(50,scrollY*0.2)+'px')">
 
+    <!--Music-->
+    <audio oncanplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
+        src="assets/music.mp3" type="audio/mpeg"></audio>
+
+    <audio oncanplay="document.getElementById('selectAudio').volume = 2;" id="selectAudio"
+        src="paginaDescubrir/assets/select.mp3" type="audio/mpeg"></audio>
+
     <table style="margin-top: 5%; 
         width: 101%; 
         min-height: 358px; 
@@ -294,7 +301,8 @@
         filter: brightness(0.6);
         opacity: 1;
         z-index:2;
-        position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)';"
+        onmouseenter="document.getElementById('selectAudio').play();"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
 
     <img src="paginaDescubrir/assets/cutBigBannerFornite.png" width="101%" style="margin-left: -1%;
@@ -318,6 +326,7 @@
         opacity: 1;
         z-index:2;
         position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseenter="document.getElementById('selectAudio').play();"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.4)'">
 
     <img src="paginaDescubrir/assets/cutBigBannerDisney.png" width="101%" style="margin-left: -1%;
@@ -341,6 +350,7 @@
         opacity: 1;
         z-index:2;
         position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseenter="document.getElementById('selectAudio').play();"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
 
     <img src="paginaDescubrir/assets/cutBigBannerMarvel.png" width="101%" style="margin-left: -1%;
@@ -364,6 +374,7 @@
         opacity: 1;
         z-index:2;
         position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseenter="document.getElementById('selectAudio').play();"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.4)'">
 
     <img src="paginaDescubrir/assets/cutBigBannerMinecraft.png" width="101%" style="margin-left: -1%;
@@ -387,6 +398,7 @@
         opacity: 1;
         z-index:2;
         position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseenter="document.getElementById('selectAudio').play();"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
 
     <img src="paginaDescubrir/assets/cutBigBannerHarryPotter.png" width="101%" style="margin-left: -1%;
@@ -403,8 +415,8 @@
     position: absolute">
 
     <a href="tienda.html"
-        onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho-light.png'"
-        onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho.png'"
+        onmouseover="this.style.backgroundColor='#fff'; this.style.color='#000'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho.png'"
+        onmouseout="this.style.backgroundColor='#000'; this.style.color='#fff'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho-light.png'"
         style="margin-top: 186.5%; 
             margin-left: 1.7%; 
             position:absolute; 
@@ -413,19 +425,20 @@
             padding-left: 10px;
             padding-right: 10px;
             text-decoration: none;
-            color:#000;
+            color:#fff;
             font-size: 20px;
             font-family: Mada;
             font-weight: 400;
             z-index: 5; 
-            background-color: #fff; 
+            background-color: #000; 
             border-radius: 5px;">
 
         <table>
             <tr>
                 <td> &nbsp;A la tienda</td>
                 <td>
-                    <img id="tiendaArrow" src="assets/icons/angulo-derecho.png" style="margin-top: 4px;" height="28">
+                    <img id="tiendaArrow" src="assets/icons/angulo-derecho-light.png" style="margin-top: 4px;"
+                        height="28">
                     </img>
                 </td>
             </tr>

@@ -23,6 +23,10 @@
 
 <body>
 
+    <!--Music-->
+    <audio oncanplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
+        src="assets/music.mp3" type="audio/mpeg"></audio>
+
     <!-- Filtros -->
     <div style="
     position: fixed;
@@ -56,7 +60,7 @@
                         font-weight: bold;
                         display: flex;
                     ">Precio</summary>
-                    
+
                     <ul style="
                     list-style: none; 
                     margin-left: -60px;
@@ -89,35 +93,28 @@
                 </details>
 
 
-                   
+
             </div>
-            
+
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha1"
-                    width="20px;"
-                    src="assets/icons/angulo-abajo.png"
-                    onmousedown="document.getElementById('elemento1').open = true;
+                <img style="display: none;" id="flecha1" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento1').open = true;
                         this.style.display='none';
-                        document.getElementById('flecha2').style.display='block';"
-                >
+                        document.getElementById('flecha2').style.display='block';">
 
-                <img style="display: block;" id="flecha2"
-                    width="20px;"
-                    src="assets/icons/angulo-arriba.png"
+                <img style="display: block;" id="flecha2" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento1').open = false;
                         this.style.display='none';
-                        document.getElementById('flecha1').style.display='block';"
-                >
+                        document.getElementById('flecha1').style.display='block';">
 
             </div>
-            </div>
+        </div>
 
 
 
 
-            <!-- Elemento 2 / NºPiezas -->
+        <!-- Elemento 2 / NºPiezas -->
         <div style="
         min-height: 4%;
         width: 100%; 
@@ -139,7 +136,7 @@
                         font-weight: bold;
                         display: flex;
                     ">NºPiezas</summary>
-                    
+
                     <ul style="
                     list-style: none; 
                     margin-left: -60px;
@@ -172,30 +169,23 @@
                 </details>
 
 
-                   
+
             </div>
-            
+
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha3"
-                    width="20px;"
-                    src="assets/icons/angulo-abajo.png"
-                    onmousedown="document.getElementById('elemento2').open = true;
+                <img style="display: none;" id="flecha3" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento2').open = true;
                         this.style.display='none';
-                        document.getElementById('flecha4').style.display='block';"
-                >
+                        document.getElementById('flecha4').style.display='block';">
 
-                <img style="display: block;" id="flecha4"
-                    width="20px;"
-                    src="assets/icons/angulo-arriba.png"
+                <img style="display: block;" id="flecha4" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento2').open = false;
                         this.style.display='none';
-                        document.getElementById('flecha3').style.display='block';"
-                >
+                        document.getElementById('flecha3').style.display='block';">
 
             </div>
-        </div>    
+        </div>
 
 
         <!-- Elemento 3 / Disponibilidad -->
@@ -220,7 +210,7 @@
                         font-weight: bold;
                         display: flex;
                     ">Disponibilidad</summary>
-                    
+
                     <ul style="
                     list-style: none; 
                     margin-left: -60px;
@@ -253,30 +243,23 @@
                 </details>
 
 
-                   
+
             </div>
-            
+
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha5"
-                    width="20px;"
-                    src="assets/icons/angulo-abajo.png"
-                    onmousedown="document.getElementById('elemento3').open = true;
+                <img style="display: none;" id="flecha5" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento3').open = true;
                         this.style.display='none';
-                        document.getElementById('flecha6').style.display='block';"
-                >
+                        document.getElementById('flecha6').style.display='block';">
 
-                <img style="display: block;" id="flecha6"
-                    width="20px;"
-                    src="assets/icons/angulo-arriba.png"
+                <img style="display: block;" id="flecha6" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento3').open = false;
                         this.style.display='none';
-                        document.getElementById('flecha5').style.display='block';"
-                >
+                        document.getElementById('flecha5').style.display='block';">
 
             </div>
-        </div>    
+        </div>
 
         <!-- Elemento 4 / Destacados -->
         <div style="
@@ -300,7 +283,7 @@
                         font-weight: bold;
                         display: flex;
                     ">Destacados</summary>
-                    
+
                     <ul style="
                     list-style: none; 
                     margin-left: -60px;
@@ -324,36 +307,29 @@
                             <input type="checkbox" style="width: 40px;">
                             <span style="margin-left: -10px;"> Próxima retirada</span>
                         </li>
-                        
+
 
                     </ul>
                 </details>
 
 
-                   
+
             </div>
-            
+
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha7"
-                    width="20px;"
-                    src="assets/icons/angulo-abajo.png"
-                    onmousedown="document.getElementById('elemento4').open = true;
+                <img style="display: none;" id="flecha7" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento4').open = true;
                         this.style.display='none';
-                        document.getElementById('flecha8').style.display='block';"
-                >
+                        document.getElementById('flecha8').style.display='block';">
 
-                <img style="display: block;" id="flecha8"
-                    width="20px;"
-                    src="assets/icons/angulo-arriba.png"
+                <img style="display: block;" id="flecha8" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento4').open = false;
                         this.style.display='none';
-                        document.getElementById('flecha7').style.display='block';"
-                >
+                        document.getElementById('flecha7').style.display='block';">
 
             </div>
-        </div>  
+        </div>
         <!-- Elemento 5 / Tipo de producto -->
         <div style="
         min-height: 4%;
@@ -376,7 +352,7 @@
                         font-weight: bold;
                         display: flex;
                     ">Tipo de producto</summary>
-                    
+
                     <ul style="
                     list-style: none; 
                     margin-left: -60px;
@@ -400,39 +376,32 @@
                             <input type="checkbox" style="width: 40px;">
                             <span style="margin-left: -10px;"> Flores</span>
                         </li>
-                        
+
 
                     </ul>
                 </details>
 
 
-                   
+
             </div>
-            
+
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha9"
-                    width="20px;"
-                    src="assets/icons/angulo-abajo.png"
-                    onmousedown="document.getElementById('elemento5').open = true;
+                <img style="display: none;" id="flecha9" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento5').open = true;
                         this.style.display='none';
-                        document.getElementById('flecha10').style.display='block';"
-                >
+                        document.getElementById('flecha10').style.display='block';">
 
-                <img style="display: block;" id="flecha10"
-                    width="20px;"
-                    src="assets/icons/angulo-arriba.png"
+                <img style="display: block;" id="flecha10" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento5').open = false;
                         this.style.display='none';
-                        document.getElementById('flecha9').style.display='block';"
-                >
+                        document.getElementById('flecha9').style.display='block';">
 
             </div>
-        </div>    
         </div>
+    </div>
 
-        
+
 
 
 
@@ -447,16 +416,16 @@
     float: left;
     background-color: white;">
 
-         <!--DIV 1º Columna -->
-         <div style="
+        <!--DIV 1º Columna -->
+        <div style="
          width:33.3%;
          height: 100%;
          float:left;
          ">
- 
- 
-                <!-- DIV juguete1/Col 1-->
-    
+
+
+            <!-- DIV juguete1/Col 1-->
+
             <div style="
         
             width: 100%;
@@ -479,15 +448,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -495,25 +463,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -526,16 +494,15 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               
-                  <!-- DIV juguete2/Col 1-->
-    
+
+            <!-- DIV juguete2/Col 1-->
+
             <div style="
         
             width: 100%;
@@ -558,15 +525,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -574,25 +540,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -605,23 +571,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete3/Col 1-->
-    
-               <div style="
+            <!-- DIV juguete3/Col 1-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -629,48 +594,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -683,15 +647,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-                  <!-- DIV juguete4/Col 1-->
-    
+                </div>
+            </div>
+
+            <!-- DIV juguete4/Col 1-->
+
             <div style="
         
             width: 100%;
@@ -714,15 +677,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -730,25 +692,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -761,23 +723,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete5/Col 1-->
-    
-               <div style="
+            <!-- DIV juguete5/Col 1-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -785,48 +746,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -839,15 +799,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-                  <!-- DIV juguete6/Col 1-->
-    
+                </div>
+            </div>
+
+            <!-- DIV juguete6/Col 1-->
+
             <div style="
         
             width: 100%;
@@ -870,15 +829,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -886,25 +844,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -917,23 +875,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete7/Col 1-->
-    
-               <div style="
+            <!-- DIV juguete7/Col 1-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -941,48 +898,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -995,23 +951,22 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-               <!-- DIV juguete8/Col 1-->
-    
-               <div style="
+                </div>
+            </div>
+
+            <!-- DIV juguete8/Col 1-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -1019,48 +974,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -1073,15 +1027,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+
+                </div>
+            </div>
 
 
-                 </div>
+        </div>
 
 
 
@@ -1095,15 +1048,15 @@
         border-right: solid lightgray 2px;
         ">
 
-        <!-- DIV juguete1/Col 2-->
-        <div style="
+            <!-- DIV juguete1/Col 2-->
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1111,22 +1064,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1134,25 +1086,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1165,23 +1117,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete2/Col 2-->
- 
-        <div style="
+            <!-- DIV juguete2/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1189,22 +1140,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1212,25 +1162,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1243,23 +1193,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete3/Col 2-->
- 
-        <div style="
+            <!-- DIV juguete3/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1267,22 +1216,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1290,25 +1238,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1321,23 +1269,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete4/Col 2-->
- 
-        <div style="
+            <!-- DIV juguete4/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1345,22 +1292,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1368,25 +1314,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1399,23 +1345,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete5/Col 2-->
- 
-        <div style="
+            <!-- DIV juguete5/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1423,22 +1368,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1446,25 +1390,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1477,24 +1421,23 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        
-        <!-- DIV juguete6/Col 2-->
- 
-        <div style="
+
+            <!-- DIV juguete6/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1502,22 +1445,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1525,25 +1467,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1556,23 +1498,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete7/Col 2-->
- 
-        <div style="
+            <!-- DIV juguete7/Col 2-->
+
+            <div style="
      
         width: 100%;
         height: 500px;
         border-bottom: solid lightgray 2px;">
 
-            <!-- DIV imagen -->
-            <div style="
+                <!-- DIV imagen -->
+                <div style="
             height: 70%;
             display: flex;
             align-items: center;
@@ -1580,22 +1521,21 @@
             border-bottom: solid lightgray 1px;
             width: 100%;
         ">
-                <!-- imagenes -->
-                <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                     height: 100%;
                     width: 100%;
                 ">
-             </div>
+                </div>
 
-        <!-- DIV Información -->
-        <div
-        style="
+                <!-- DIV Información -->
+                <div style="
         padding-left: 5%;
         height: 30%;
         background-color: rgba(194, 194, 194, 0.186);">
 
-            <!-- Nombre producto -->
-            <div style="
+                    <!-- Nombre producto -->
+                    <div style="
             width: 100%;
             padding-top: 5%;
             display: flex;
@@ -1603,25 +1543,25 @@
             font-size: 24px;
             align-items: center;">
 
-            <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-            </div>
+                    </div>
 
-            <!-- precio -->
-            <div style="
+                    <!-- precio -->
+                    <div style="
             width: 100%;
             margin-top: 1%;
             font-weight: 500;
             font-family: Roboto;
             font-size: 23px;">
-              
-            <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-            </div>
+                    </div>
 
-            <!-- Añadir al carrito-->
-            <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
            width: 88%;
            height: 28%;
            margin-top: 4%;
@@ -1634,23 +1574,22 @@
            font-weight: bold;
            cursor: pointer;
            background-color: #ffcf00;
-           "
-           onmouseover="this.style.backgroundColor='#f2c300'"
-           onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+           " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <!-- DIV juguete8/Col 2-->
- 
-             <div style="
+            <!-- DIV juguete8/Col 2-->
+
+            <div style="
      
              width: 100%;
              height: 500px;
              border-bottom: solid lightgray 2px;">
- 
-                 <!-- DIV imagen -->
-                 <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                  height: 70%;
                  display: flex;
                  align-items: center;
@@ -1658,48 +1597,47 @@
                  border-bottom: solid lightgray 1px;
                  width: 100%;
              ">
-                     <!-- imagenes -->
-                     <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                          height: 100%;
                          width: 100%;
                      ">
-                  </div>
- 
-             <!-- DIV Información -->
-             <div
-             style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
              padding-left: 5%;
              height: 30%;
              background-color: rgba(194, 194, 194, 0.186);">
- 
-                 <!-- Nombre producto -->
-                 <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                  width: 100%;
                  padding-top: 5%;
                  display: flex;
                  font-weight: bold;
                  font-size: 24px;
                  align-items: center;">
- 
-                 <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
- 
-                 </div>
- 
-                 <!-- precio -->
-                 <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                  width: 100%;
                  margin-top: 1%;
                  font-weight: 500;
                  font-family: Roboto;
                  font-size: 23px;">
-                   
-                 <span style="padding-left: 0%;">69,99€</span>
- 
- 
-                 </div>
- 
-                 <!-- Añadir al carrito-->
-                 <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -1712,33 +1650,32 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
- 
-             </div>
-             </div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-         
+                </div>
+            </div>
+
+
         </div>
-            
 
 
-       
 
 
-        
-    
 
 
-         <!--DIV 3º Columna -->
-         <div style="
+
+
+
+
+        <!--DIV 3º Columna -->
+        <div style="
          width:33.3%;
          height: 100%;
          float:left;
          ">
             <!-- DIV juguete1/Col 3-->
-    
+
             <div style="
         
             width: 100%;
@@ -1761,15 +1698,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -1777,25 +1713,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -1808,23 +1744,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete2/Col 3-->
-    
-               <div style="
+            <!-- DIV juguete2/Col 3-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -1832,48 +1767,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -1886,15 +1820,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-                  <!-- DIV juguete3/Col 3-->
-    
+                </div>
+            </div>
+
+            <!-- DIV juguete3/Col 3-->
+
             <div style="
         
             width: 100%;
@@ -1917,15 +1850,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -1933,25 +1865,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -1964,23 +1896,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete4/Col 3-->
-    
-               <div style="
+            <!-- DIV juguete4/Col 3-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -1988,48 +1919,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -2042,15 +1972,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-   <!-- DIV juguete5/Col 3-->
-    
+                </div>
+            </div>
+
+            <!-- DIV juguete5/Col 3-->
+
             <div style="
         
             width: 100%;
@@ -2073,15 +2002,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -2089,25 +2017,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -2120,23 +2048,22 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
-            </div>
+                </div>
             </div>
 
-               <!-- DIV juguete6/Col 3-->
-    
-               <div style="
+            <!-- DIV juguete6/Col 3-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -2144,48 +2071,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -2198,15 +2124,14 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-                  <!-- DIV juguete7/Col 3-->
-    
+                </div>
+            </div>
+
+            <!-- DIV juguete7/Col 3-->
+
             <div style="
         
             width: 100%;
@@ -2229,15 +2154,14 @@
                     ">
                 </div>
 
-            <!-- DIV Información -->
-            <div
-            style="
+                <!-- DIV Información -->
+                <div style="
             padding-left: 5%;
             height: 30%;
             background-color: rgba(194, 194, 194, 0.186);">
 
-                <!-- Nombre producto -->
-                <div style="
+                    <!-- Nombre producto -->
+                    <div style="
                 width: 100%;
                 padding-top: 5%;
                 display: flex;
@@ -2245,25 +2169,25 @@
                 font-size: 24px;
                 align-items: center;">
 
-                <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
 
-                </div>
+                    </div>
 
-                <!-- precio -->
-                <div style="
+                    <!-- precio -->
+                    <div style="
                 width: 100%;
                 margin-top: 1%;
                 font-weight: 500;
                 font-family: Roboto;
                 font-size: 23px;">
-                
-                <span style="padding-left: 0%;">69,99€</span>
+
+                        <span style="padding-left: 0%;">69,99€</span>
 
 
-                </div>
+                    </div>
 
-                <!-- Añadir al carrito-->
-                <div style="
+                    <!-- Añadir al carrito-->
+                    <div style="
                 width: 88%;
                 height: 28%;
                 margin-top: 4%;
@@ -2276,24 +2200,23 @@
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #ffcf00;
-                "
-                onmouseover="this.style.backgroundColor='#f2c300'"
-                onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
+                " onmouseover="this.style.backgroundColor='#f2c300'" onmouseout="this.style.backgroundColor='#ffcf00'">
+                        Añadir al carrito</div>
 
+                </div>
             </div>
-            </div>
 
 
-               <!-- DIV juguete8/Col 3-->
-    
-               <div style="
+            <!-- DIV juguete8/Col 3-->
+
+            <div style="
         
                width: 100%;
                height: 500px;
                border-bottom: solid lightgray 2px;">
-   
-                   <!-- DIV imagen -->
-                   <div style="
+
+                <!-- DIV imagen -->
+                <div style="
                    height: 70%;
                    display: flex;
                    align-items: center;
@@ -2301,48 +2224,47 @@
                    border-bottom: solid lightgray 1px;
                    width: 100%;
                ">
-                       <!-- imagenes -->
-                       <img src="paginaProducto/assets/jugueteRandom1.png" style="
+                    <!-- imagenes -->
+                    <img src="paginaProducto/assets/jugueteRandom1.png" style="
                            height: 100%;
                            width: 100%;
                        ">
-                   </div>
-   
-               <!-- DIV Información -->
-               <div
-               style="
+                </div>
+
+                <!-- DIV Información -->
+                <div style="
                padding-left: 5%;
                height: 30%;
                background-color: rgba(194, 194, 194, 0.186);">
-   
-                   <!-- Nombre producto -->
-                   <div style="
+
+                    <!-- Nombre producto -->
+                    <div style="
                    width: 100%;
                    padding-top: 5%;
                    display: flex;
                    font-weight: bold;
                    font-size: 24px;
                    align-items: center;">
-   
-                   <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
-   
-                   </div>
-   
-                   <!-- precio -->
-                   <div style="
+
+                        <span style="padding-left: 0%;">Buho fachero - Harry Potter</span>
+
+                    </div>
+
+                    <!-- precio -->
+                    <div style="
                    width: 100%;
                    margin-top: 1%;
                    font-weight: 500;
                    font-family: Roboto;
                    font-size: 23px;">
-                   
-                   <span style="padding-left: 0%;">69,99€</span>
-   
-   
-                   </div>
-   
-                   <!-- Añadir al carrito-->
-                   <div style="
+
+                        <span style="padding-left: 0%;">69,99€</span>
+
+
+                    </div>
+
+                    <!-- Añadir al carrito-->
+                    <div style="
                    width: 88%;
                    height: 28%;
                    margin-top: 4%;
@@ -2355,21 +2277,20 @@
                    font-weight: bold;
                    cursor: pointer;
                    background-color: #ffcf00;
-                   "
-                   onmouseover="this.style.backgroundColor='#f2c300'"
-                   onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
-   
-               </div>
-               </div>
+                   " onmouseover="this.style.backgroundColor='#f2c300'"
+                        onmouseout="this.style.backgroundColor='#ffcf00'">Añadir al carrito</div>
 
-
-                 
+                </div>
+            </div>
 
 
 
 
- 
- 
+
+
+
+
+
 
         </div>
     </div>
