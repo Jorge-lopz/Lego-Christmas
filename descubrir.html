@@ -198,20 +198,25 @@
     document.getElementById('colaboradoresTabla').style.marginTop=(Math.min(50,scrollY*0.2)+'px');
     document.getElementById('colaboradoresBlur').style.marginTop=(Math.min(50,scrollY*0.2)+'px')">
 
-    <table style="margin-top: 3%; 
+    <table style="margin-top: 5%; 
         width: 101%; 
         min-height: 358px; 
         position: absolute; 
         z-index:99; 
         padding-left: 5%; 
-        padding-top: 2%; 
         padding-right: 3%; 
         background: linear-gradient(#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff00);">
 
         <tr style="text-align:center">
             <td colspan="6"
                 style="color:rgb(0, 0, 0); font-family: Lexend; font-size:50px; font-weight: 600; text-shadow: #00000010 0 0 10px;">
-                COLABORADORES
+                COLABORADORES<br><br>
+                <span style="color:rgb(0, 0, 0); 
+                    font-family: Lexend; 
+                    font-size:35px; 
+                    font-weight: 300; 
+                    text-shadow: #00000010 0 0 10px;">
+                    Estas son algunas de las marcas que se han unido al <b>Universo Lego®</b></span>
             </td>
         </tr>
     </table>
@@ -338,7 +343,7 @@
         position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
         onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
 
-    <img src="paginaDescubrir/assets/cutBigBannerMarvel2.png" width="101%" style="margin-left: -1%;
+    <img src="paginaDescubrir/assets/cutBigBannerMarvel.png" width="101%" style="margin-left: -1%;
         clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
         margin-top: 90.4%; 
         z-index:1;
@@ -354,7 +359,7 @@
     <!--Minecraft-->
     <img src="paginaDescubrir/assets/cutSmallBannerMinecraft.png" width="101%" style="margin-left: -1%;
         clip-path: polygon(0 0, 100% 11%, 100% 89%, 0 100%);
-        margin-top: 122.2%; 
+        margin-top: 121.2%; 
         filter: brightness(0.4);
         opacity: 1;
         z-index:2;
@@ -363,12 +368,68 @@
 
     <img src="paginaDescubrir/assets/cutBigBannerMinecraft.png" width="101%" style="margin-left: -1%;
         clip-path: polygon(0 0, 100% 11%, 100% 89%, 0 100%);
-        margin-top: 122.2%; 
+        margin-top: 121.2%; 
         z-index:1;
         position: absolute">
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!--Separator Line-->
+    <img src="paginaDescubrir/assets/separatorLine.png" width="101%" style="margin-left: -1%;
+        transform: rotate(-2deg);
+        margin-top: 154%; 
+        z-index:99;
+        position: absolute">
+
+    <!--Harry Potter-->
+    <img src="paginaDescubrir/assets/cutSmallBannerHarryPotter.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
+        margin-top: 152.5%; 
+        filter: brightness(0.6);
+        opacity: 1;
+        z-index:2;
+        position: absolute;" onmouseover="this.style.opacity=0; this.style.filter='brightness(1)'"
+        onmouseout="this.style.opacity = 1; this.style.filter='brightness(0.6)'">
+
+    <img src="paginaDescubrir/assets/cutBigBannerHarryPotter.png" width="101%" style="margin-left: -1%;
+        clip-path: polygon(0 11%, 100% 0, 100% 99%, 0 89%);
+        margin-top: 152.03%; 
+        z-index:1;
+        position: absolute">
+
+    <!--Separator Line-->
+    <img src="paginaDescubrir/assets/separatorLine.png" width="101%" style="margin-left: -1%;
+    transform: rotate(2deg);
+    margin-top: 185%; 
+    z-index:99;
+    position: absolute">
+
+    <a href="tienda.html"
+        onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho-light.png'"
+        onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'; getElementById('tiendaArrow').src='assets/icons/angulo-derecho.png'"
+        style="margin-top: 186.5%; 
+            margin-left: 1.7%; 
+            position:absolute; 
+            padding-bottom: 7px;
+            padding-top: 9px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            color:#000;
+            font-size: 20px;
+            font-family: Mada;
+            font-weight: 400;
+            z-index: 5; 
+            background-color: #fff; 
+            border-radius: 5px;">
+
+        <table>
+            <tr>
+                <td> &nbsp;A la tienda</td>
+                <td>
+                    <img id="tiendaArrow" src="assets/icons/angulo-derecho.png" style="margin-top: 4px;" height="28">
+                    </img>
+                </td>
+            </tr>
+        </table>
+    </a>
 
 </body>
