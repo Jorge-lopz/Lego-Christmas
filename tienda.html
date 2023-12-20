@@ -25,12 +25,414 @@
 
     <!-- Filtros -->
     <div style="
-        width: 18%;
-        height: 700px;
-        float: left;
-        overflow-y: scroll;
-        background-color: blue;">
+    position: fixed;
+    width: 18%;
+    margin-left: 22px;
+    height: 700px;
+    float: left;
+    overflow-y: scroll;
+    background-color: white;">
 
+
+        <!-- Elemento 1 / Precio -->
+        <div style="
+        min-height: 4%;
+        width: 100%; 
+        padding-top: 10px;
+        border-top: solid lightgray 1px;
+        float: left;
+        list-style: none;">
+
+            <!-- Texto -->
+            <div style="
+                height: 100%;
+                padding-left: 5%;
+                width: 82%;
+                float: left;
+            ">
+                <details id="elemento1" style="width: 100%;" open="true">
+                    <summary style="
+                        font-family: Lexend;
+                        font-weight: bold;
+                        display: flex;
+                    ">Precio</summary>
+                    
+                    <ul style="
+                    list-style: none; 
+                    margin-left: -60px;
+                    font-size: 15px;
+                    font-family: Lexend;
+                    line-height: 28px;">
+
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> 0€ - 25€</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> 25€ - 50€</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">50€ - 100€</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">100€ - 200€</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">>200€</span>
+                        </li>
+
+                    </ul>
+                </details>
+
+
+                   
+            </div>
+            
+
+            <!-- Flecha -->
+            <div style="width: 5%; float: left;">
+                <img style="display: none;" id="flecha1"
+                    width="20px;"
+                    src="assets/icons/angulo-abajo.png"
+                    onmousedown="document.getElementById('elemento1').open = true;
+                        this.style.display='none';
+                        document.getElementById('flecha2').style.display='block';"
+                >
+
+                <img style="display: block;" id="flecha2"
+                    width="20px;"
+                    src="assets/icons/angulo-arriba.png"
+                    onmousedown="document.getElementById('elemento1').open = false;
+                        this.style.display='none';
+                        document.getElementById('flecha1').style.display='block';"
+                >
+
+            </div>
+            </div>
+
+
+
+
+            <!-- Elemento 2 / NºPiezas -->
+        <div style="
+        min-height: 4%;
+        width: 100%; 
+        padding-top: 10px;
+        border-top: solid lightgray 1px;
+        float: left;
+        list-style: none;">
+
+            <!-- Texto -->
+            <div style="
+                height: 100%;
+                padding-left: 5%;
+                width: 82%;
+                float: left;
+            ">
+                <details open="true" id="elemento2" style="width: 100%;">
+                    <summary style="
+                        font-family: Lexend;
+                        font-weight: bold;
+                        display: flex;
+                    ">NºPiezas</summary>
+                    
+                    <ul style="
+                    list-style: none; 
+                    margin-left: -60px;
+                    font-size: 15px;
+                    font-family: Lexend;
+                    line-height: 28px;">
+
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> 1 - 199</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> 200 - 499</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">500 - 999</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">1000 - 1999</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;">>2000</span>
+                        </li>
+
+                    </ul>
+                </details>
+
+
+                   
+            </div>
+            
+
+            <!-- Flecha -->
+            <div style="width: 5%; float: left;">
+                <img style="display: none;" id="flecha3"
+                    width="20px;"
+                    src="assets/icons/angulo-abajo.png"
+                    onmousedown="document.getElementById('elemento2').open = true;
+                        this.style.display='none';
+                        document.getElementById('flecha4').style.display='block';"
+                >
+
+                <img style="display: block;" id="flecha4"
+                    width="20px;"
+                    src="assets/icons/angulo-arriba.png"
+                    onmousedown="document.getElementById('elemento2').open = false;
+                        this.style.display='none';
+                        document.getElementById('flecha3').style.display='block';"
+                >
+
+            </div>
+        </div>    
+
+
+        <!-- Elemento 3 / Disponibilidad -->
+        <div style="
+        min-height: 4%;
+        width: 100%; 
+        padding-top: 10px;
+        border-top: solid lightgray 1px;
+        float: left;
+        list-style: none;">
+
+            <!-- Texto -->
+            <div style="
+                height: 100%;
+                padding-left: 5%;
+                width: 82%;
+                float: left;
+            ">
+                <details open="true" id="elemento3" style="width: 100%;">
+                    <summary style="
+                        font-family: Lexend;
+                        font-weight: bold;
+                        display: flex;
+                    ">Disponibilidad</summary>
+                    
+                    <ul style="
+                    list-style: none; 
+                    margin-left: -60px;
+                    font-size: 15px;
+                    font-family: Lexend;
+                    line-height: 28px;">
+
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Ya disponible</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Fuera de stock</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Pendiente</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Reservar</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Proximamente</span>
+                        </li>
+
+                    </ul>
+                </details>
+
+
+                   
+            </div>
+            
+
+            <!-- Flecha -->
+            <div style="width: 5%; float: left;">
+                <img style="display: none;" id="flecha5"
+                    width="20px;"
+                    src="assets/icons/angulo-abajo.png"
+                    onmousedown="document.getElementById('elemento3').open = true;
+                        this.style.display='none';
+                        document.getElementById('flecha6').style.display='block';"
+                >
+
+                <img style="display: block;" id="flecha6"
+                    width="20px;"
+                    src="assets/icons/angulo-arriba.png"
+                    onmousedown="document.getElementById('elemento3').open = false;
+                        this.style.display='none';
+                        document.getElementById('flecha5').style.display='block';"
+                >
+
+            </div>
+        </div>    
+
+        <!-- Elemento 4 / Destacados -->
+        <div style="
+        min-height: 4%;
+        width: 100%; 
+        padding-top: 10px;
+        border-top: solid lightgray 1px;
+        float: left;
+        list-style: none;">
+
+            <!-- Texto -->
+            <div style="
+                height: 100%;
+                padding-left: 5%;
+                width: 82%;
+                float: left;
+            ">
+                <details open="true" id="elemento4" style="width: 100%;">
+                    <summary style="
+                        font-family: Lexend;
+                        font-weight: bold;
+                        display: flex;
+                    ">Destacados</summary>
+                    
+                    <ul style="
+                    list-style: none; 
+                    margin-left: -60px;
+                    font-size: 15px;
+                    font-family: Lexend;
+                    line-height: 28px;">
+
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Difíciles de encontrar</span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Exclusivos </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Novedad </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Próxima retirada</span>
+                        </li>
+                        
+
+                    </ul>
+                </details>
+
+
+                   
+            </div>
+            
+
+            <!-- Flecha -->
+            <div style="width: 5%; float: left;">
+                <img style="display: none;" id="flecha7"
+                    width="20px;"
+                    src="assets/icons/angulo-abajo.png"
+                    onmousedown="document.getElementById('elemento4').open = true;
+                        this.style.display='none';
+                        document.getElementById('flecha8').style.display='block';"
+                >
+
+                <img style="display: block;" id="flecha8"
+                    width="20px;"
+                    src="assets/icons/angulo-arriba.png"
+                    onmousedown="document.getElementById('elemento4').open = false;
+                        this.style.display='none';
+                        document.getElementById('flecha7').style.display='block';"
+                >
+
+            </div>
+        </div>  
+        <!-- Elemento 5 / Tipo de producto -->
+        <div style="
+        min-height: 4%;
+        width: 100%; 
+        padding-top: 10px;
+        border-top: solid lightgray 1px;
+        float: left;
+        list-style: none;">
+
+            <!-- Texto -->
+            <div style="
+                height: 100%;
+                padding-left: 5%;
+                width: 82%;
+                float: left;
+            ">
+                <details open="true" id="elemento5" style="width: 100%;">
+                    <summary style="
+                        font-family: Lexend;
+                        font-weight: bold;
+                        display: flex;
+                    ">Tipo de producto</summary>
+                    
+                    <ul style="
+                    list-style: none; 
+                    margin-left: -60px;
+                    font-size: 15px;
+                    font-family: Lexend;
+                    line-height: 28px;">
+
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Sets </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Decoración del hogar </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Adultos </span>
+                        </li>
+                        <li>
+                            <input type="checkbox" style="width: 40px;">
+                            <span style="margin-left: -10px;"> Flores</span>
+                        </li>
+                        
+
+                    </ul>
+                </details>
+
+
+                   
+            </div>
+            
+
+            <!-- Flecha -->
+            <div style="width: 5%; float: left;">
+                <img style="display: none;" id="flecha9"
+                    width="20px;"
+                    src="assets/icons/angulo-abajo.png"
+                    onmousedown="document.getElementById('elemento5').open = true;
+                        this.style.display='none';
+                        document.getElementById('flecha10').style.display='block';"
+                >
+
+                <img style="display: block;" id="flecha10"
+                    width="20px;"
+                    src="assets/icons/angulo-arriba.png"
+                    onmousedown="document.getElementById('elemento5').open = false;
+                        this.style.display='none';
+                        document.getElementById('flecha9').style.display='block';"
+                >
+
+            </div>
+        </div>    
+        </div>
+
+        
 
 
 
@@ -38,7 +440,7 @@
 
     <!-- Juguetes -->
     <div style="
-    margin-left: 2%;
+    margin-left: 20%;
     width: 78%;
     height: 5000px;
     border: solid lightgray 2px;
