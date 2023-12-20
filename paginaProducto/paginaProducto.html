@@ -432,9 +432,10 @@
                 height: 7%;
                 width: 50%;">
 
-                <table style="border: solid #959595 0px; border-radius: 20px; background-color: rgb(255, 255, 255);">
+                <table
+                    style="border: solid #959595 0px; border-radius: 20px; background-color: rgb(255, 255, 255); user-select:none">
                     <tr>
-                        <td style="background-color: #96969622; border-radius: 20px"
+                        <td style="background-color: #96969622; border-radius: 20px; user-select: none"
                             onmousedown="this.style.backgroundColor='#96969655'"
                             onmouseover="this.style.backgroundColor='#96969644'"
                             onmouseout="this.style.backgroundColor='#96969622'"
@@ -454,7 +455,7 @@
                                 -
                             </button>
                         </td>
-                        <td>
+                        <td style="user-select:none">
                             <input id="counter" type="number" readonly=true value="1" min="1" max="1" style="user-select:none; 
                             font-size:22px; 
                             font-weight: 400; 
@@ -465,7 +466,7 @@
                             max-width: 40px; 
                             border: none;">
                         </td>
-                        <td style="background-color: #96969622; border-radius: 20px;"
+                        <td style="background-color: #96969622; border-radius: 20px; user-select:none"
                             onmousedown="this.style.backgroundColor='#96969655'"
                             onmouseover="this.style.backgroundColor='#96969644'"
                             onmouseout="this.style.backgroundColor='#96969622'"
@@ -501,6 +502,7 @@
                     <li onmouseover="this.style.backgroundColor='#e0000b'"
                         onmouseout="this.style.backgroundColor='#f6000d'" style="
                         width: 80%;
+                        user-select:none;
                         background-color: #f6000d;
                         display: flex;
                         cursor: pointer;
@@ -519,6 +521,7 @@
                         cursor: pointer;
                         display: flex;
                         align-items: center;
+                        user-select:none;
                         justify-content: center;">
                         <img src="assets/icons/corazon.png" alt="corazon" style="
                     height: 35px;
