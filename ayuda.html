@@ -17,13 +17,292 @@
     <link rel="icon" href="assets/icons/legoIcon.png">
 </head>
 
+<!--HEADER-->
+
+<header id="header" style="background-image: url('assets/headerAmarillo.png');
+        background-size: cover;
+        box-shadow: rgb(0, 0, 0) -1px 1px 3px;
+        display: block;
+        position: fixed;
+        padding:1%;
+        padding-bottom: 3px;
+        width:98%;
+        left: 0;
+        top: 0;
+        z-index:9998">
+
+    <a href="index.html" style="float: left;">
+        <img src="assets/icons/legoLogo.png" alt="Legoo Logo" width="55px" height="55px"
+            style="user-select: none; margin-top: -6px; margin-left: 30%; box-shadow: #00000050 0px 0px 1px;">
+    </a>
+
+    <a href="tienda.html" onmouseover="this.style.textDecoration='underline'"
+        onmouseout="this.style.textDecoration='none'" style="float:left; 
+        margin-top: 0.6%; 
+        margin-left: 4.5%; 
+        color:#000000; 
+        font-family: Poppins; 
+        text-decoration: none; 
+        font-stretch: condensed;
+        font-weight:500;
+        user-select: none;
+        font-size: 17px;">
+        COMPRAR
+    </a>
+
+    <a href="descubrir.html" onmouseover="this.style.textDecoration='underline'"
+        onmouseout="this.style.textDecoration='none'" style="float:left; 
+        margin-top: 0.6%; 
+        margin-left: 3%; 
+        color:#000000; 
+        font-family: Poppins; 
+        text-decoration: none; 
+        font-stretch: condensed;
+        font-weight:500;
+        user-select: none;
+        font-size: 17px;"> DESCUBRIR
+    </a>
+
+    <a href="javascript:;" onmouseover="this.style.textDecoration='underline'"
+        onmouseout="this.style.textDecoration='none'" style="float:left; 
+        margin-top: 0.6%; 
+        margin-left: 3%; 
+        color:#000000; 
+        font-family: Poppins; 
+        text-decoration: none; 
+        font-stretch: condensed;
+        font-weight:500;
+        user-select: none;
+        font-size: 17px;"> AYUDA
+    </a>
+
+    <a href="legoCreator.html">
+        <button
+            onmouseover="this.style.backgroundColor='#ffffffff'; this.style.boxShadow='rgb(0, 0, 0, 0.5) 1px 2px 2px'"
+            onmouseout="this.style.backgroundColor='#ffffffde';  this.style.boxShadow='rgb(0, 0, 0) 2px 3px 2px'" style="float: left; 
+            margin-top: 0.1%; 
+            margin-left: 15.9%; 
+            background-color: #ffffffde;
+            padding-top: 0.3%;
+            padding-bottom: 0.3%;
+            padding-right: 1%;
+            padding-left: 1%;
+            cursor: pointer;
+            color:#000000; text-decoration: none;
+            font-family: Poppins; 
+            font-stretch: condensed;
+            font-weight:600;
+            box-shadow: rgb(0, 0, 0) 2px 3px 2px;
+            user-select: none;
+            font-size: 17px;">
+            ¡CREA TU LEGO!
+        </button>
+    </a>
+
+    <a href="enConstruccion.html"><img src="assets/icons/shoppingBagIconWhite.png" alt="Carrito" width="70px"
+            style="user-select: none; margin-top: -17px; float: right; filter: drop-shadow(#00000020 2px 2px 4px)"
+            onmouseover="this.style.filter='drop-shadow(#00000070 2px 2px 4px)'"
+            onmouseout="this.style.filter='drop-shadow(#00000020 2px 2px 4px)'">
+    </a>
+
+    <button id="button1"
+        style="float:right; filter:drop-shadow(#00000030 2px 2px 4px); margin-left: 1.4%; font-size:30px; background-color: transparent; border: none;"
+        onclick="getElementById('musicControls').style.display='block'; this.style.display='none'; getElementById('button2').style.display='block';"
+        onmouseover="this.style.filter='drop-shadow(#00000070 2px 2px 4px)'"
+        onmouseout="this.style.filter='drop-shadow(#00000030 2px 2px 4px)'">
+        🎹</button>
+
+    <button id="button2"
+        style="display: none; float:right; filter:drop-shadow(#00000030 2px 2px 4px); margin-left: 1.4%; font-size:30px; background-color: transparent; border: none;"
+        onclick="getElementById('musicControls').style.display='none'; this.style.display='none'; getElementById('button1').style.display='block';"
+        onmouseover="this.style.filter='drop-shadow(#00000070 2px 2px 4px)'"
+        onmouseout="this.style.filter='drop-shadow(#00000030 2px 2px 4px)'">
+        🎹</button>
+
+    <table cellspacing="0" cellpadding="0" onmouseleave="document.getElementById('search_bar').style.display='none';"
+        onmouseover="this.style.boxShadow='#00000030 3px 3px 5px'"
+        onmouseout="this.style.boxShadow='#00000020 2px 2px 4px'" style="user-select: none; float: right;
+            background-color:#ffffff; 
+            padding-left: 1px;
+            padding-bottom: 1px;
+            padding-left: 2px;
+            padding-right: 2px;
+            border-radius: 50px;
+            margin-top: -2px;
+            box-shadow: #00000020 2px 2px 4px">
+        <tr>
+            <td>
+                <a href="javascript:;"><img src="assets/icons/search.png" alt="Busqueda" width="40px"
+                        style="margin-right: 1px"
+                        onclick="document.getElementById('search_bar').style.display='block';">
+
+                </a>
+            </td>
+            <td>
+                <input id="search_bar" type="search" placeholder="Buscar..."
+                    style="display: none; border:none; outline:none; margin-left:2%; font-size:14px; margin-right:5px; font-family: Lexend;">
+            </td>
+
+        </tr>
+    </table>
+
+</header>
+
+<!--Music Controls-->
+<table id="musicControls" style="display: none;
+     position:fixed; 
+     margin-left: 86%; 
+     margin-top: 4.5%; 
+     border-radius: 7px; 
+     box-shadow: rgb(0, 0, 0, 0.8) 1px 1px 5px;
+     background: linear-gradient(#ffcf00ee, #ffcf00aa); 
+     backdrop-filter: blur(10px); 
+     min-width: 180px; 
+     padding-top: 0.5%;
+     padding-bottom: 0.7%;
+     font-size:30px;
+     z-index: 9998">
+
+    <tr>
+        <td width="4px"></td>
+        <td style="filter:drop-shadow(#00000070 0 0 4px); user-select:none"
+            onclick="document.getElementById('backgroundAudio').volume=Math.max(0.05,document.getElementById('backgroundAudio').volume-=0.1)">
+            🔉</td>
+
+        <td width="12px"></td>
+
+        <td id="play" style="filter:drop-shadow(#00000060 0 0 3px); user-select:none" onclick="this.style.display='none';
+            document.getElementById('backgroundAudio').play();
+            getElementById('pause').style.display='block'">
+            ▶️</td>
+        <td id="pause" style="display:none; filter:drop-shadow(#00000060 0 0 3px); user-select:none" onclick="this.style.display='none';
+        document.getElementById('backgroundAudio').pause();
+        getElementById('play').style.display='block'">
+            ⏸️</td>
+
+        <td width="12px"></td>
+
+        <td style="filter:drop-shadow(#00000070 0 0 4px); user-select:none"
+            onclick="getElementById('backgroundAudio').volume+=0.1">
+            🔊</td>
+        <td width="4px"></td>
+    </tr>
+</table>
+
+
+<!--BODY-->
+
 <body>
 
+    <!--Music-->
+    <audio oncanplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
+        src="assets/music.mp3" type="audio/mpeg"></audio>
+
+    <!--Background, headerLights and Lego Map-->
+    <img draggable="false" src="assets/AyudaContactoBackground.png"
+        style="position: fixed; filter: drop-shadow(#260305aa 0 0 5px); width: 102%; margin-top: 4%; margin-left: -1%; z-index:1;">
+
     <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
-        style="margin-top: -0.5%; margin-left: -1%; position:fixed; z-index: 10" width="101%">
+        style="position:fixed; margin-top: 65px; margin-left: -1%; z-index:-990; " width="101%">
 
+    <img id="mapaLegooff" src="assets/mapaLego.jpg" width="25%" style="position:fixed;
+        margin-top: 28%;
+        margin-left: 4%; 
+        z-index:1; 
+        cursor:pointer;
+        border-radius:4px;
+        border: solid #000 5px;" onmouseover="this.width+=25; this.style.marginLeft='3%'; this.style.marginTop='27.8%'"
+        onmouseout="this.width-=25; this.style.marginLeft='4%'; this.style.marginTop='28%'"
+        onclick="document.getElementById('gmaps').style.display='block';this.style.display='none'; getElementById('mapaLegoon').style.display='block';">
 
+    <img id="mapaLegoon" src="assets/mapaLego.jpg" width="25%" style="position:fixed;
+        display:none;
+        margin-top: 28%;
+        margin-left: 4%; 
+        z-index:1; 
+        cursor:pointer;
+        border-radius:4px;
+        border: solid #000 5px;" onmouseover="this.width+=25; this.style.marginLeft='3%'; this.style.marginTop='27.8%'"
+        onmouseout="this.width-=25; this.style.marginLeft='4%'; this.style.marginTop='28%'"
+        onclick="document.getElementById('gmaps').style.display='none';this.style.display='none'; getElementById('mapaLegooff').style.display='block';">
 
+    <!--Contenido-->
+    <table style="position:absolute; 
+            z-index: 99; 
+            margin-top: 7%; 
+            margin-left: 3%">
+        <tr>
+            <td style="font-family:Lexend; 
+            font-size: 40px; 
+            font-weight: 600">AYUDA Y CONTACTO<br><br></td>
+        </tr>
+
+        <tr style="text-align:center; 
+        font-family:Lexend; 
+        font-size: 20px; 
+        font-weight: 300">
+            <td>¿Tienes alguna duda o sugerencia?<br><br></td>
+        </tr>
+        <tr style="text-align:center;">
+            <td>
+                <span id="escribenosoff" style="font-weight: 500; 
+                    display: inline-block;
+                    user-select:none;
+                    padding: 5px; 
+                    font-family: Lexend; 
+                    font-size: 23px; 
+                    background-color: #fff;
+                    color: #000;
+                    border-radius: 5px;
+                    cursor:pointer; 
+                    border: solid #000 2px"
+                    onclick="this.style.display='none'; document.getElementById('escribenoson').style.display='inline-block'; document.getElementById('email').style.display='block'"
+                    onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff'"
+                    onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'">
+                    &nbsp;Escríbenos&nbsp;
+                </span>
+                <span id="escribenoson" style="font-weight: 500; 
+                    user-select:none;
+                    display:none;
+                    padding: 5px; 
+                    font-family: Lexend; 
+                    font-size: 23px; 
+                    background-color: #fff;
+                    color: #000;
+                    border-radius: 5px;
+                    cursor:pointer; 
+                    border: solid #000 2px"
+                    onclick="this.style.display='none'; document.getElementById('escribenosoff').style.display='inline-block'; document.getElementById('email').style.display='block'"
+                    onmouseover="this.style.backgroundColor='#000';this.style.color='#fff'"
+                    onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'">
+                    &nbsp;Escríbenos&nbsp;
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <!--Email-->
+        </tr>
+    </table>
+
+    <!--Mapa-->
+    <div id="gmaps" style="max-width:100%;
+        display:none;
+        position:absolute; 
+        margin-top: 10%; 
+        margin-left: 53%; 
+        z-index: 999; 
+        border: solid #000 3px;
+        border-radius: 7px;
+        overflow:hidden;
+        width:400px;
+        height:350px;">
+        <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;
+                width:100%;
+                border:0;"
+                src="https://www.google.com/maps/embed/v1/search?q=legoland&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes"
+            id="grab-maps-authorization">premium bootstrap themes</a>
+    </div>
 </body>
 
 </html>
