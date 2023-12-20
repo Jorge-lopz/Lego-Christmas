@@ -169,24 +169,25 @@
 
     <tr>
         <td width="4px"></td>
-        <td style="filter:drop-shadow(#00000070 0 0 4px);"
+        <td style="filter:drop-shadow(#00000070 0 0 4px); user-select:none"
             onclick="document.getElementById('backgroundAudio').volume=Math.max(0.05,document.getElementById('backgroundAudio').volume-=0.1)">
             🔉</td>
 
         <td width="12px"></td>
 
-        <td id="play" style="filter:drop-shadow(#00000060 0 0 3px);" onclick="this.style.display='none';
+        <td id="play" style="filter:drop-shadow(#00000060 0 0 3px); user-select:none" onclick="this.style.display='none';
             document.getElementById('backgroundAudio').play();
             getElementById('pause').style.display='block'">
             ▶️</td>
-        <td id="pause" style="display:none; filter:drop-shadow(#00000060 0 0 3px);" onclick="this.style.display='none';
+        <td id="pause" style="display:none; filter:drop-shadow(#00000060 0 0 3px); user-select:none" onclick="this.style.display='none';
         document.getElementById('backgroundAudio').pause();
         getElementById('play').style.display='block'">
             ⏸️</td>
 
         <td width="12px"></td>
 
-        <td style="filter:drop-shadow(#00000070 0 0 4px);" onclick="getElementById('backgroundAudio').volume+=0.1">
+        <td style="filter:drop-shadow(#00000070 0 0 4px); user-select:none"
+            onclick="getElementById('backgroundAudio').volume+=0.1">
             🔊</td>
         <td width="4px"></td>
     </tr>
@@ -313,9 +314,9 @@
         z-index: 4;
         text-align: center;
         color: white;
-        font-size: 20px;
-        font-family: Mada;
-        font-weight: 500;">
+        font-size: 28px;
+        font-family: Lexend;
+        font-weight: 600;">
 
         <tr style="height: 80px;"></tr>
         <tr>
