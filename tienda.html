@@ -42,7 +42,7 @@
         <div style="
         min-height: 4%;
         width: 100%; 
-        padding-top: 10px;
+        padding-top: 18px;
         border-top: solid lightgray 1px;
         float: left;
         list-style: none;">
@@ -277,7 +277,7 @@
                 width: 82%;
                 float: left;
             ">
-                <details open="true" id="elemento4" style="width: 100%;">
+                <details id="elemento4" style="width: 100%;">
                     <summary style="
                         font-family: Lexend;
                         font-weight: bold;
@@ -319,12 +319,11 @@
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha7" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento4').open = true;
+                <img style="display: block;" id="flecha7" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento4').open = true;
                         this.style.display='none';
                         document.getElementById('flecha8').style.display='block';">
 
-                <img style="display: block;" id="flecha8" width="20px;" src="assets/icons/angulo-arriba.png"
-                    onmousedown="document.getElementById('elemento4').open = false;
+                <img style="display: none;" id="flecha8" width="20px;" src="assets/icons/angulo-arriba.png" onmousedown="document.getElementById('elemento4').open = false;
                         this.style.display='none';
                         document.getElementById('flecha7').style.display='block';">
 
@@ -346,7 +345,7 @@
                 width: 82%;
                 float: left;
             ">
-                <details open="true" id="elemento5" style="width: 100%;">
+                <details id="elemento5" style="width: 100%;">
                     <summary style="
                         font-family: Lexend;
                         font-weight: bold;
@@ -388,11 +387,11 @@
 
             <!-- Flecha -->
             <div style="width: 5%; float: left;">
-                <img style="display: none;" id="flecha9" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento5').open = true;
+                <img style="display: block;" id="flecha9" width="20px;" src="assets/icons/angulo-abajo.png" onmousedown="document.getElementById('elemento5').open = true;
                         this.style.display='none';
                         document.getElementById('flecha10').style.display='block';">
 
-                <img style="display: block;" id="flecha10" width="20px;" src="assets/icons/angulo-arriba.png"
+                <img style="display: none;" id="flecha10" width="20px;" src="assets/icons/angulo-arriba.png"
                     onmousedown="document.getElementById('elemento5').open = false;
                         this.style.display='none';
                         document.getElementById('flecha9').style.display='block';">
