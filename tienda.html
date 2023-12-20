@@ -200,14 +200,40 @@
         src="assets/music.mp3" type="audio/mpeg"></audio>
 
     <!--Botón Ocultar/Mostrar Filtros-->
+    <img src="assets/icons/filtros-icono-black.png" id="filtersClose" height="30px"
+        style="display:none; position:fixed; margin-top: 6.2%; margin-left: 1%; z-index: 2; user-select:none;"
+        onclick="
+    this.style.display='none'; getElementById('filtersOpen').style.display='block';
+    getElementById('filtros').style.display='none'; getElementById('juguetes').style.marginLeft='12%'; getElementById('titulo').style.marginLeft='12%'">
 
+    <p style="position:fixed; margin-top: 6.2%; margin-left: 1%; z-index: 2; user-select:none;
+        font-family:Lexend;
+        font-size:25px;
+        font-weight: 500;
+        padding-bottom: 4%" id="filtersOpen">
+        <img src="assets/icons/filtros-icono.png" height="30px"
+            onclick="
+            getElementById('filtersOpen').style.display='none'; getElementById('filtersClose').style.display='block';
+            getElementById('filtros').style.display='block'; getElementById('juguetes').style.marginLeft='20%'; getElementById('titulo').style.marginLeft='20%'">
+    </p>
 
+    <!--Titulo-->
+
+    <div id="titulo" style="
+    margin-left: 12%;
+    margin-top: 4%;
+    width: 78%;
+    float:left;">
+        <p style="font-weight:600; text-align:center; font-family:Lexend; font-size: 50px">PRODUCTOS</p>
+    </div>
 
     <!-- Filtros -->
     <div id="filtros" style="
+    display:none; 
     position: fixed;
-    width: 19.1%;
+    width: 18.4%;
     margin-left: 9px;
+    padding-right: 12px;
     margin-top: 4.1%;
     height: 635px;
     float: left;
@@ -217,13 +243,13 @@
         <div style="
         min-height: 4%;
         width: 100%; 
-        padding-top: 18px;
+        padding-top: 30px;
         float: left;
         list-style: none;
         text-align:center;
         font-family:Lexend;
-        font-size:25px;
-        font-weight: 500;
+        font-size:28px;
+        font-weight: 700;
         padding-bottom: 4%">Filtros
         </div>
 
@@ -231,8 +257,7 @@
         <div style="
         min-height: 4%;
         width: 100%; 
-        padding-top: 18px;
-        border-top: solid lightgray 1px;
+        padding-top: 30px;
         float: left;
         list-style: none;">
 
@@ -581,9 +606,8 @@
     </div>
 
     <!-- Juguetes -->
-    <div style="
-    margin-left: 20%;
-    margin-top: 13%;
+    <div id="juguetes" style="
+    margin-left: 12%;
     width: 78%;
     border: solid lightgray 2px;
     float: left;
@@ -1222,9 +1246,6 @@
 
         </div>
 
-
-
-
         <!--DIV 2º Columna -->
         <div style="
         width:33.1%;
@@ -1852,15 +1873,6 @@ background-color: #ffcf00;
 
 
         </div>
-
-
-
-
-
-
-
-
-
 
         <!--DIV 3º Columna -->
         <div style="
