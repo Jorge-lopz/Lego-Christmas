@@ -514,11 +514,7 @@
                 margin-left: 1%;
                 font-family: Roboto;">
 
-<<<<<<< Updated upstream
-                <p>199.99€</p>
-=======
                 <p>119.99€</p>
->>>>>>> Stashed changes
 
             </div>
 
@@ -610,8 +606,8 @@
                         Comprar
                     </li>
 
-                   <!-- Botón animación -->
-                   <li style="
+                    <!-- Botón animación -->
+                    <li style="
                    width: 40px;
                    height: 40px;
                    margin-left: 4%;
@@ -621,36 +617,33 @@
                border-radius: 50%;
                    align-items: center;
                    user-select:none;
-                   justify-content: center;"
-                   onmouseover="this.style.backgroundColor='#cecece'"
-                   onmouseout="this.style.backgroundColor='#f4f4f4'">
+                   justify-content: center;" onmouseover="this.style.backgroundColor='#cecece'"
+                        onmouseout="this.style.backgroundColor='#f4f4f4'">
 
 
-                    <!-- Contador -->
-                    <audio id="contador"
-                    src="assets/contador3.mp3" volume="0.01"
-                    onended="document.getElementById('animacion').style.display='none'; document.getElementById('corazonLleno').style.display='block';"></audio>
+                        <!-- Contador -->
+                        <audio id="contador" src="assets/contador3.mp3" volume="0.01"
+                            onended="document.getElementById('animacion').style.display='none'; document.getElementById('corazonLleno').style.display='block';"></audio>
 
 
-                    <!-- corazon Vacio-->
-                   <img id="corazonVacio" src="assets/icons/corazonVacio.png" alt="corazon" style="
+                        <!-- corazon Vacio-->
+                        <img id="corazonVacio" src="assets/icons/corazonVacio.png" alt="corazon" style="
                    height: 40px;
                    height: 40px;"
-                   onmousedown="this.style.display='none'; document.getElementById('animacion').style.display='block'; document.getElementById('contador').play(); ">
+                            onmousedown="this.style.display='none'; document.getElementById('animacion').style.display='block'; document.getElementById('contador').play(); ">
 
-                    <!-- Animación-->
-                   <img id="animacion" src="assets/pruebaCorazon3.gif" alt="corazon" style="
+                        <!-- Animación-->
+                        <img id="animacion" src="assets/pruebaCorazon3.gif" alt="corazon" style="
+                   display: none;
+                   height: 40px;
+                   height: 40px;" onmousedown="this.style.display='none'">
+
+                        <!-- corazon lleno-->
+                        <img id="corazonLleno" src="assets/icons/corazonLleno.png" alt="corazon" style="
                    display: none;
                    height: 40px;
                    height: 40px;"
-                   onmousedown="this.style.display='none'">
-
-                    <!-- corazon lleno-->
-                   <img id="corazonLleno" src="assets/icons/corazonLleno.png" alt="corazon" style="
-                   display: none;
-                   height: 40px;
-                   height: 40px;"
-                   onmousedown="this.style.display='none';document.getElementById('corazonVacio').style.display='block'">
+                            onmousedown="this.style.display='none';document.getElementById('corazonVacio').style.display='block'">
                     </li>
                 </ul>
 
