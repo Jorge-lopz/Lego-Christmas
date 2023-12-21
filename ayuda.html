@@ -198,6 +198,9 @@
     <audio oncanplay="document.getElementById('backgroundAudio').volume = 0.3;" id="backgroundAudio" loop
         src="assets/music.mp3" type="audio/mpeg"></audio>
 
+    <audio oncanplay="document.getElementById('selectAudio').volume = 2;" id="selectAudio"
+        src="paginaDescubrir/assets/select.mp3" type="audio/mpeg"></audio>
+
     <!--Background, headerLights and Lego Map-->
     <img draggable="false" src="assets/AyudaContactoBackground.png"
         style="position: fixed; filter: drop-shadow(#260305aa 0 0 5px); width: 102%; margin-top: 4%; margin-left: -1%; z-index:1;">
@@ -213,7 +216,7 @@
         border-radius:4px;
         border: solid #000 5px;" onmouseover="this.width+=25; this.style.marginLeft='3%'; this.style.marginTop='27.8%'"
         onmouseout="this.width-=25; this.style.marginLeft='4%'; this.style.marginTop='28%'"
-        onclick="document.getElementById('gmaps').style.display='block';this.style.display='none'; getElementById('mapaLegoon').style.display='block';">
+        onclick="document.getElementById('gmaps').style.display='block';this.style.display='none'; getElementById('mapaLegoon').style.display='block'; getElementById('selectAudio').play();">
 
     <img id="mapaLegoon" src="assets/mapaLego.jpg" width="25%" style="position:fixed;
         display:none;
@@ -224,7 +227,7 @@
         border-radius:4px;
         border: solid #000 5px;" onmouseover="this.width+=25; this.style.marginLeft='3%'; this.style.marginTop='27.8%'"
         onmouseout="this.width-=25; this.style.marginLeft='4%'; this.style.marginTop='28%'"
-        onclick="document.getElementById('gmaps').style.display='none';this.style.display='none'; getElementById('mapaLegooff').style.display='block';">
+        onclick="document.getElementById('gmaps').style.display='none';this.style.display='none'; getElementById('mapaLegooff').style.display='block'; getElementById('selectAudio').play();">
 
     <!--Contenido-->
     <table style="position:absolute; 
@@ -272,15 +275,35 @@
                     border-radius: 5px;
                     cursor:pointer; 
                     border: solid #000 2px"
-                    onclick="this.style.display='none'; document.getElementById('escribenosoff').style.display='inline-block'; document.getElementById('email').style.display='block'"
+                    onclick="this.style.display='none'; document.getElementById('escribenosoff').style.display='inline-block'; document.getElementById('email').style.display='none'"
                     onmouseover="this.style.backgroundColor='#000';this.style.color='#fff'"
                     onmouseout="this.style.backgroundColor='#fff'; this.style.color='#000'">
                     &nbsp;Escríbenos&nbsp;
                 </span>
             </td>
         </tr>
+    </table>
+
+    <!--Email-->
+    <table id="email" style="position:absolute; 
+        z-index: 100; 
+        display: none;
+        margin-top: 20%; 
+        margin-left: 7.8%;">
         <tr>
-            <!--Email-->
+            <td style="text-align:center;">
+                <a href="mailto:support@lego.com?cc=support@lego.com&subject=Support request" style="
+                    font-family: Mada;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-style: oblique;
+                    font-weight: 100;
+                    color: #000">
+                    <span style="font-size: 60px; text-shadow: #000000aa 2px 2px 3px;"><sub>📧 </span><b
+                        style="text-decoration:underline;">
+                        support@lego.com</b>
+                </a>
+            </td>
         </tr>
     </table>
 
@@ -289,12 +312,13 @@
         display:none;
         position:absolute; 
         margin-top: 10%; 
-        margin-left: 53%; 
+        margin-left: 49%; 
         z-index: 999; 
-        border: solid #000 3px;
+        border: solid #000 2px;
         border-radius: 7px;
         overflow:hidden;
-        width:400px;
+        box-shadow: #00000050 1px 1px 5px;
+        width:500px;
         height:350px;">
         <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;
                 width:100%;
@@ -303,6 +327,31 @@
         </div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes"
             id="grab-maps-authorization">premium bootstrap themes</a>
     </div>
+
+    <!--Créditos-->
+    <table border="0" style="font-family: Lexend;
+        position:absolute;
+        z-index: 2;
+        margin-top:41%;
+        margin-left:61%;">
+        <tr>
+            <td rowspan="2" style="padding-right: 18px; padding-top: 9px;">
+                <img draggable="false" src="assets/icons/github.png" width="35px">
+            </td>
+            <td style="font-size: 22px;
+            font-weight: 400;
+            user-select: none;">
+                <a href="" style="text-decoration: none; color:#000">Jesús Sánchez Pedraza</a>
+            </td>
+            <td style="min-width: 30px"></td>
+            <td style="font-size: 22px;
+            font-weight: 400;
+            user-select: none;">
+                <a href="https://github.com/Paco-Rubio/" style="text-decoration: none; color:#000">
+                    Jorge López Puebla</a>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
