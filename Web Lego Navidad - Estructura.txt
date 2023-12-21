@@ -1,0 +1,244 @@
+WEB-NAVIDAD
+ ┣ assets
+ ┃  ┣ icons
+ ┃  ┃  ┣ angulo-abajo.png
+ ┃  ┃  ┣ angulo-arriba.png
+ ┃  ┃  ┣ angulo-derecho-light.png
+ ┃  ┃  ┣ angulo-derecho.png
+ ┃  ┃  ┣ angulo-izquierdo.png
+ ┃  ┃  ┣ filtros-icono-black.png
+ ┃  ┃  ┣ filtros-icono.png
+ ┃  ┃  ┣ github.png
+ ┃  ┃  ┣ hamburguerIcon.png
+ ┃  ┃  ┣ icono_contacto.png
+ ┃  ┃  ┣ icono_envios.png
+ ┃  ┃  ┣ icono_recogida.png
+ ┃  ┃  ┣ icono_tiendas.png
+ ┃  ┃  ┣ iconoPlay.png
+ ┃  ┃  ┣ legoArrow.png
+ ┃  ┃  ┣ legoIcon.png
+ ┃  ┃  ┣ legoLogo.png
+ ┃  ┃  ┣ search.png
+ ┃  ┃  ┣ shoppingBagIcon.png
+ ┃  ┃  ┣ shoppingBagIconLight.png
+ ┃  ┃  ┗ shoppingBagIconWhite.png
+ ┃  ┣ legoCreator
+ ┃  ┃  ┣ barbaGorroSanta.png
+ ┃  ┃  ┣ blank.png
+ ┃  ┃  ┣ camisetaBasica.png
+ ┃  ┃  ┣ CamisetaBB.png
+ ┃  ┃  ┣ camisetaElfo.png
+ ┃  ┃  ┣ camisetaMarronReno.png
+ ┃  ┃  ┣ camisetaMuñecoNieve.png
+ ┃  ┃  ┣ camisetaReno.png
+ ┃  ┃  ┣ camisetaSanta.png
+ ┃  ┃  ┣ caraBasica.png
+ ┃  ┃  ┣ caraBasica2.png
+ ┃  ┃  ┣ caraElfo.png
+ ┃  ┃  ┣ caraFemenina.png
+ ┃  ┃  ┣ caraGafas.png
+ ┃  ┃  ┣ caraLegoPiel.png
+ ┃  ┃  ┣ caraReno.png
+ ┃  ┃  ┣ caraSanta.png
+ ┃  ┃  ┣ gorroElfo.png
+ ┃  ┃  ┣ gorroReno.png
+ ┃  ┃  ┣ gorroRenoIcono.png
+ ┃  ┃  ┣ manosBasicas.png
+ ┃  ┃  ┣ orejasElfo.png
+ ┃  ┃  ┣ orejasGorroElfoIcono.png
+ ┃  ┃  ┣ pantalonesElfo.png
+ ┃  ┃  ┣ pantalonesGrises.png
+ ┃  ┃  ┣ pantalonesMarrones.png
+ ┃  ┃  ┣ pantalonesNegro.png
+ ┃  ┃  ┣ pantalonesReno.png
+ ┃  ┃  ┣ pantalonesSanta.png
+ ┃  ┃  ┗ peloBasico.png
+ ┃  ┣ loaders
+ ┃  ┃  ┣ Lego Face.gif
+ ┃  ┃  ┣ legoLoader1.gif
+ ┃  ┃  ┣ legoLoader2.gif
+ ┃  ┃  ┣ legoLoader3.gif
+ ┃  ┃  ┣ legoLoader4.gif
+ ┃  ┃  ┣ legoLoader5.gif
+ ┃  ┃  ┣ legoLoader6.gif
+ ┃  ┃  ┣ legoLoader7.gif
+ ┃  ┃  ┣ legoTruck.gif
+ ┃  ┃  ┗ Loading Animation.gif
+ ┃  ┣ AyudaContactoBackground.png
+ ┃  ┣ Background Section 1.webp
+ ┃  ┣ Background Section 2.png
+ ┃  ┣ Background Section 3.webp
+ ┃  ┣ Background Start Screen.webp
+ ┃  ┣ BackgroundCreadorLego3.png
+ ┃  ┣ bajar.gif
+ ┃  ┣ bannerAzul.png
+ ┃  ┣ bannerMoto.jpg
+ ┃  ┣ bannerMoto.png
+ ┃  ┣ bannerNavidad.png
+ ┃  ┣ bannerRegalos.jpg
+ ┃  ┣ bannerRojo.png
+ ┃  ┣ casaChewaca.png
+ ┃  ┣ casaNieve.png
+ ┃  ┣ cascanueces.png
+ ┃  ┣ changeColorBanner.jpg
+ ┃  ┣ changeColorBannerInvertido.jpg
+ ┃  ┣ click.mp3
+ ┃  ┣ disneyLogo.png
+ ┃  ┣ elfos.png
+ ┃  ┣ Feliz Navidad Lego.jpg
+ ┃  ┣ fortniteLogo.png
+ ┃  ┣ harryPotterLogo.png
+ ┃  ┣ headerAmarillo.png
+ ┃  ┣ headerEdición.pdn
+ ┃  ┣ headerPrueba.jpg
+ ┃  ┣ headerPrueba.pdn
+ ┃  ┣ headerRojo.png
+ ┃  ┣ headerRojo2.png
+ ┃  ┣ Holiday23-LSDExpress-202312-Hero-Short-Small.jpg
+ ┃  ┣ juguete5.png
+ ┃  ┣ juguete6.png
+ ┃  ┣ juguete7.png
+ ┃  ┣ juguete8.png
+ ┃  ┣ Lego Christmas Video.mp4
+ ┃  ┣ Lego Pieces.png
+ ┃  ┣ legoBricks.mp3
+ ┃  ┣ LegoChristmasTree 2.png
+ ┃  ┣ LegoChristmasTree.png
+ ┃  ┣ legoCreatorBackground.png
+ ┃  ┣ legoCreatorFigureShadow.png
+ ┃  ┣ legoLogo.gif
+ ┃  ┣ Loading Background legoCreator.png
+ ┃  ┣ LucesNavidad.png
+ ┃  ┣ LucesNavidadHeader.png
+ ┃  ┣ mainBackground.png
+ ┃  ┣ mapaLego.jpg
+ ┃  ┣ mapaLego.png
+ ┃  ┣ marvelLogo.png
+ ┃  ┣ minecraftLogo.png
+ ┃  ┣ minecraftLogo2.png
+ ┃  ┣ music.mp3
+ ┃  ┣ osospolares.png
+ ┃  ┣ prueba1.png
+ ┃  ┣ prueba2.png
+ ┃  ┣ regalos2.jpg
+ ┃  ┣ satisfactionFace.gif
+ ┃  ┣ satisfactionValoration.png
+ ┃  ┣ satisfactionYellow.png
+ ┃  ┣ timer.mp3
+ ┃  ┣ trineo.png
+ ┃  ┣ trineoConRenos.png
+ ┃  ┣ trineoInvertido.png
+ ┃  ┣ trineoSanta.png
+ ┃  ┣ Under Construction Background.png
+ ┃  ┗ Under Construction.gif
+ ┣ paginaDescubrir
+ ┃  ┗ assets
+ ┃     ┣ cutBigBannerDisney.png
+ ┃     ┣ cutBigBannerFornite.png
+ ┃     ┣ cutBigBannerHarryPotter.png
+ ┃     ┣ cutBigBannerMarvel.png
+ ┃     ┣ cutBigBannerMinecraft.png
+ ┃     ┣ cutSmallBannerDisney.png
+ ┃     ┣ cutSmallBannerFornite.png
+ ┃     ┣ cutSmallBannerHarryPotter.png
+ ┃     ┣ cutSmallBannerMarvel.png
+ ┃     ┣ cutSmallBannerMinecraft.png
+ ┃     ┣ Plantilla.png
+ ┃     ┣ select.mp3
+ ┃     ┗ separatorLine.png
+ ┣ paginaProducto
+ ┃  ┣ assets
+ ┃  ┃  ┣ icons
+ ┃  ┃  ┃  ┣ cestacompra.png
+ ┃  ┃  ┃  ┣ corazonLleno.png
+ ┃  ┃  ┃  ┣ corazonVacio.png
+ ┃  ┃  ┃  ┣ edad.png
+ ┃  ┃  ┃  ┣ figuras.png
+ ┃  ┃  ┃  ┗ piezas.png
+ ┃  ┃  ┣ 90anosgif.gif
+ ┃  ┃  ┣ casaNevada1.png
+ ┃  ┃  ┣ casaNevada2.png
+ ┃  ┃  ┣ casaNevada3.png
+ ┃  ┃  ┣ casaNevada4.png
+ ┃  ┃  ┣ casaNevada5.png
+ ┃  ┃  ┣ casaNevada6.png
+ ┃  ┃  ┣ casaNevada7.png
+ ┃  ┃  ┣ casaNevada8.png
+ ┃  ┃  ┣ casaNevadaVideo1.mp4
+ ┃  ┃  ┣ casaNevadaVideo1.png
+ ┃  ┃  ┣ casaNevadaVideo2.mp4
+ ┃  ┃  ┣ casaNevadaVideo2.png
+ ┃  ┃  ┣ cascanueces.png
+ ┃  ┃  ┣ cascanueces2.png
+ ┃  ┃  ┣ cascanueces3.png
+ ┃  ┃  ┣ cascanueces4.png
+ ┃  ┃  ┣ cascanueces5.png
+ ┃  ┃  ┣ contador2.mp3
+ ┃  ┃  ┣ flores.png
+ ┃  ┃  ┣ flores2.png
+ ┃  ┃  ┣ flores3.png
+ ┃  ┃  ┣ flores4.png
+ ┃  ┃  ┣ flores5.png
+ ┃  ┃  ┣ flores6.png
+ ┃  ┃  ┣ flores7.png
+ ┃  ┃  ┣ flores8.png
+ ┃  ┃  ┣ floresVideo.mp4
+ ┃  ┃  ┣ floresVideo.png
+ ┃  ┃  ┣ jugueteRandom1.png
+ ┃  ┃  ┣ jugueteRandom10.png
+ ┃  ┃  ┣ jugueteRandom11.png
+ ┃  ┃  ┣ jugueteRandom12.png
+ ┃  ┃  ┣ jugueteRandom13.png
+ ┃  ┃  ┣ jugueteRandom14.png
+ ┃  ┃  ┣ jugueteRandom15.png
+ ┃  ┃  ┣ jugueteRandom16.png
+ ┃  ┃  ┣ jugueteRandom17.png
+ ┃  ┃  ┣ jugueteRandom18.png
+ ┃  ┃  ┣ jugueteRandom19.png
+ ┃  ┃  ┣ jugueteRandom2.png
+ ┃  ┃  ┣ jugueteRandom20.png
+ ┃  ┃  ┣ jugueteRandom21.png
+ ┃  ┃  ┣ jugueteRandom22.png
+ ┃  ┃  ┣ jugueteRandom23.png
+ ┃  ┃  ┣ jugueteRandom24.png
+ ┃  ┃  ┣ jugueteRandom3.png
+ ┃  ┃  ┣ jugueteRandom4.png
+ ┃  ┃  ┣ jugueteRandom5.png
+ ┃  ┃  ┣ jugueteRandom6.png
+ ┃  ┃  ┣ jugueteRandom7.png
+ ┃  ┃  ┣ jugueteRandom8.png
+ ┃  ┃  ┣ jugueteRandom9.png
+ ┃  ┃  ┣ osopolar1.png
+ ┃  ┃  ┣ osopolar2.png
+ ┃  ┃  ┣ osopolar3.png
+ ┃  ┃  ┣ osopolar4.png
+ ┃  ┃  ┣ osopolar5.png
+ ┃  ┃  ┣ pruebaCorazon1.gif
+ ┃  ┃  ┣ pruebaCorazon2.gif
+ ┃  ┃  ┣ pruebaCorazon3.gif
+ ┃  ┃  ┣ tren1.png
+ ┃  ┃  ┣ tren2.png
+ ┃  ┃  ┣ tren3.png
+ ┃  ┃  ┣ tren4.png
+ ┃  ┃  ┣ tren5.png
+ ┃  ┃  ┣ trenVideo.mp4
+ ┃  ┃  ┣ trenVideo.png
+ ┃  ┃  ┣ trineoSanta.png
+ ┃  ┃  ┣ trineoSanta1.png
+ ┃  ┃  ┣ trineoSanta2.png
+ ┃  ┃  ┣ trineoSanta3.png
+ ┃  ┃  ┣ trineoSanta4.png
+ ┃  ┃  ┣ trineoSanta5.png
+ ┃  ┃  ┗ trineoSanta6.png
+ ┃  ┣ paginaCasaNevada.html
+ ┃  ┣ paginaCascanueces.html
+ ┃  ┣ paginaFlores.html
+ ┃  ┣ paginaOsosPolares.html
+ ┃  ┣ paginaTrenHowards.html
+ ┃  ┗ paginaTrineoSanta.html
+ ┣ ayuda.html
+ ┣ descubrir.html
+ ┣ enConstruccion.html
+ ┣ index.html
+ ┣ legoCreator.html
+ ┗ tienda.html
