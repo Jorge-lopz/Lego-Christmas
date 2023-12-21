@@ -177,10 +177,18 @@
     style="margin-top: -5.2%; margin-left: -0.5%; position:absolute; z-index: -999">
 
   <!--Loading Background & GIF-->
-  <img id="loadingBackground" src="assets/Loading Background legoCreator.png" height="100%" style="position:absolute;
+  <img id="loadingBackground" onmouseenter="document.getElementById('timer').play()"
+    src="assets/Loading Background legoCreator.png" height="100%" style="position:absolute;
     margin-top: -5.2%;
     margin-left: -0.5%;
     z-index:9999">
+  </img>
+
+  <img id="loadingGIF" onmouseenter="document.getElementById('timer').play()" src="assets/loaders/legoLoader5.gif"
+    height="90%" style="position:absolute;
+  margin-top: -5.2%;
+  margin-left: 20%;
+  z-index:9999">
   </img>
 
   <!--Music-->
@@ -189,6 +197,10 @@
 
   <audio oncanplay="document.getElementById('selectAudio').volume = 2;" id="selectAudio"
     src="paginaDescubrir/assets/select.mp3" type="audio/mpeg"></audio>
+
+  <audio oncanplay="document.getElementById('timer').volume = 0.01;" id="timer" src="assets/timer.mp3"
+    onended="document.getElementById('loadingGIF').style.display='none';document.getElementById('loadingBackground').style.display='none'"
+    type="audio/mpeg"></audio>
 
   <!--Luces Header-->
   <img src="assets/LucesNavidadHeader.png" id="lucesHeader"
