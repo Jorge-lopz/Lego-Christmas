@@ -1,5 +1,4 @@
-
-## LEGO CHRISTMAS WEB 
+# LEGO CHRISTMAS WEB &nbsp;<img src="https://visitor-badge.laobi.icu/badge?page_id=jorge-lopz.legochristmas">
 
 > [!IMPORTANT] 
 > **For educational purposes only**
