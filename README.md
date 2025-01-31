@@ -17,7 +17,7 @@ There were some serious limitations, as *CSS* or *JS* was forbidden (except for 
 <table>
   <td>
       
-  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Home.jpeg)</sub>
+  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Home.png)</sub>
   </td>
 </table>
 
@@ -26,7 +26,7 @@ There were some serious limitations, as *CSS* or *JS* was forbidden (except for 
 <table>
   <td>
       
-  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Character%20customization.jpeg)</sub>
+  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Character%20customization.png)</sub>
   </td>
 </table>
 
@@ -35,7 +35,7 @@ There were some serious limitations, as *CSS* or *JS* was forbidden (except for 
 <table>
   <td>
       
-  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Product.jpeg)</sub>
+  <sub>![](https://github.com/Jorge-lopz/Lego-Christmas/blob/main/media/Product.png)</sub>
   </td>
 </table>
 
