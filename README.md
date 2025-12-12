@@ -8,7 +8,7 @@ There were some serious limitations, as *CSS* or *JS* was forbidden (except for 
 
 <div align="center">
 
-⛓️‍💥 [Lego Christmas](lego-christmas.vercel.app) ⛓️‍💥
+⛓️‍💥 [Lego Christmas](https://lego-christmas.vercel.app) ⛓️‍💥
 
 <br>
 
